@@ -13,3 +13,13 @@ docs/.bundle/
 /.cache/
 
 /dist/
+.DS_Store
+.agents/
+__pycache__/
+*.pyc
+.gradle/
+build/
+android/.gradle/
+android/app/build/
+android/build/
+graphify-out/cache/

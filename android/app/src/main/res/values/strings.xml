@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Spotifast</string>
+    <string name="login_title">Sign in to Spotify</string>
+    <string name="login_subtitle">Fast, native Spotify player with synchronized lyrics and zero telemetry</string>
+    <string name="login_button">Continue with Spotify</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_library">Your Library</string>
+    <string name="search_placeholder">What do you want to play?</string>
+    <string name="empty_library">No playlists or saved tracks yet</string>
+    <string name="lyrics_title">Lyrics</string>
+    <string name="no_lyrics">No lyrics available for this song</string>
+</resources>

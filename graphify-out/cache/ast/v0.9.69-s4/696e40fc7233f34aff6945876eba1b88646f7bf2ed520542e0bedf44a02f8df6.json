@@ -1,0 +1,1 @@
+{"nodes": [{"id": "$graphify-root$_packaging_macos_dmg_rb", "label": "dmg.rb", "file_type": "code", "source_file": "packaging/macos/dmg.rb", "source_location": "L1", "metadata": {"ruby_resolution_schema": 1}}], "edges": [], "raw_calls": []}
