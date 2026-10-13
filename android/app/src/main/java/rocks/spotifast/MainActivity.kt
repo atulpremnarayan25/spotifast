@@ -32,13 +32,10 @@ class MainActivity : ComponentActivity() {
 
     private fun handleOAuthRedirect(intent: Intent?) {
         val uri = intent?.data ?: return
-        if (uri.scheme == "spotifast" && uri.host == "login") {
+        if ((uri.scheme == "spotifast" && uri.host == "login") ||
+            (uri.scheme == "http" && uri.host == "127.0.0.1" && uri.port == 8989 && uri.path == "/login")) {
             lifecycleScope.launch {
-                val success = SpotifastApp.instance.authManager.handleAuthResponse(uri)
-                if (success) {
-                    // Trigger recomposition by restarting or updating auth state
-                    recreate()
-                }
+                SpotifastApp.instance.authManager.handleAuthResponse(uri)
             }
         }
     }

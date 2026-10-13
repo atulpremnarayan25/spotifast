@@ -76,7 +76,8 @@ object ApiClient {
 
     fun create(authManager: AuthManager): SpotifyApi {
         val logging = HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BASIC
+            level = HttpLoggingInterceptor.Level.BODY
+            redactHeader("Authorization")
         }
 
         val okHttpClient = OkHttpClient.Builder()

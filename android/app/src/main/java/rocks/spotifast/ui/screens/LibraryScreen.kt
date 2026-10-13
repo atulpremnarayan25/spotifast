@@ -47,13 +47,29 @@ fun LibraryScreen(
             .background(DarkBackground)
             .padding(top = 16.dp)
     ) {
-        Text(
-            text = "Your Library",
-            color = TextPrimary,
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
-        )
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 8.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "Your Library",
+                color = TextPrimary,
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold
+            )
+
+            val authManager = remember { SpotifastApp.instance.authManager }
+            if (authManager.isSignedIn) {
+                TextButton(
+                    onClick = { authManager.signOut() }
+                ) {
+                    Text("Sign Out", color = TextSecondary, fontSize = 13.sp)
+                }
+            }
+        }
 
         if (isLoading) {
             Box(

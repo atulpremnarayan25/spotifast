@@ -2172,9 +2172,9 @@
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/MainActivity.kt": {
-    "mtime": 1791830138.0696187,
-    "seen": 1791830439.678838,
-    "ast_hash": "af87affffd932f80cb5547d2297a8793",
+    "mtime": 1791889796.5945196,
+    "seen": 1791890840.6860642,
+    "ast_hash": "4d3d6e746d51138cee0607a4cee53395",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/SpotifastApp.kt": {
@@ -2184,21 +2184,21 @@
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/auth/AuthManager.kt": {
-    "mtime": 1791884870.859385,
-    "seen": 1791886104.464271,
-    "ast_hash": "e18cf83cc2fefafedace87caa8d8cafc",
+    "mtime": 1791890494.983816,
+    "seen": 1791890840.686087,
+    "ast_hash": "8b591f86727d4d127eb6d592dc539549",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/auth/TokenStore.kt": {
-    "mtime": 1791829891.036046,
-    "seen": 1791830439.678839,
-    "ast_hash": "0338f04080f27b2e4c6b7e49ba5a0ece",
+    "mtime": 1791889656.1782532,
+    "seen": 1791890840.6860878,
+    "ast_hash": "2e618b27678e8db78d00e6b972c01e1a",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/data/api/SpotifyApi.kt": {
-    "mtime": 1791829921.2314053,
-    "seen": 1791830439.6788402,
-    "ast_hash": "932bf650bb6336478d6169ec8d1472af",
+    "mtime": 1791890430.9396126,
+    "seen": 1791890840.68611,
+    "ast_hash": "046dc3ca22cab02afd41321c18e1d233",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/data/models/SpotifyModels.kt": {
@@ -2250,9 +2250,9 @@
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/navigation/AppNavigation.kt": {
-    "mtime": 1791885058.550846,
-    "seen": 1791886104.464576,
-    "ast_hash": "389c4ec1f10614819224b28503bb8694",
+    "mtime": 1791889741.897905,
+    "seen": 1791890840.686252,
+    "ast_hash": "d98e0ae82fc06b2321e4af411e0cd632",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/HomeScreen.kt": {
@@ -2262,15 +2262,15 @@
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/LibraryScreen.kt": {
-    "mtime": 1791885031.3364458,
-    "seen": 1791886104.4645782,
-    "ast_hash": "85bc16db197de075fbd2fe8a1cfbf772",
+    "mtime": 1791890567.6507215,
+    "seen": 1791890840.686273,
+    "ast_hash": "aa6bccb10fda4acb0f67b03e471f4422",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/LoginScreen.kt": {
-    "mtime": 1791884877.311156,
-    "seen": 1791886104.46458,
-    "ast_hash": "b91f248f92c944703a958fb2208fbe15",
+    "mtime": 1791890549.7252703,
+    "seen": 1791890840.686273,
+    "ast_hash": "3ad17c3f60f5b5f781df7c3b72cd9523",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/NowPlayingBottomSheet.kt": {

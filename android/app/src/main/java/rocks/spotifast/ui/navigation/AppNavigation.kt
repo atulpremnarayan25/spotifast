@@ -31,7 +31,8 @@ enum class NavScreen(val title: String, val icon: ImageVector) {
 @Composable
 fun AppNavigation(modifier: Modifier = Modifier) {
     val authManager = remember { SpotifastApp.instance.authManager }
-    var isAuthenticated by remember { mutableStateOf<Boolean>(authManager.hasValidTokens()) }
+    val isAuthenticated by authManager.authState.collectAsState()
+    var isDemoMode by remember { mutableStateOf(false) }
 
     var currentScreen by remember { mutableStateOf(NavScreen.HOME) }
     var currentTrack by remember { mutableStateOf<Track?>(null) }
@@ -47,9 +48,9 @@ fun AppNavigation(modifier: Modifier = Modifier) {
         }
     }
 
-    if (!isAuthenticated) {
+    if (!isAuthenticated && !isDemoMode) {
         LoginScreen(
-            onLoginSuccess = { isAuthenticated = true }
+            onLoginSuccess = { isDemoMode = true }
         )
     } else {
         Scaffold(

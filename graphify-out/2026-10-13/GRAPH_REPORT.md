@@ -1,13 +1,13 @@
 # Graph Report - spotifast  (2026-10-13)
 
 ## Corpus Check
-- 302 files · ~1,453,970 words
+- 303 files · ~1,455,454 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 69 file(s) not represented in the graph (top: .po 15, .bin 7, .xml 7)
+- Unclassified: 70 file(s) not represented in the graph (top: .po 15, (none) 7, .bin 7)
 
 ## Summary
-- 7884 nodes · 19792 edges · 333 communities (288 shown, 45 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 300 edges (avg confidence: 0.87)
+- 7866 nodes · 19755 edges · 352 communities (308 shown, 44 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 306 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
@@ -22,24 +22,24 @@
 - app.rs
 - .handle_api
 - Worker
-- src/lyrics.rs
+- history.rs
 - .new
 - sidebar.rs
 - models.rs
 - default_skin.rs
 - LikedSongs
 - bidi.rs
-- Session
-- Ui
+- ApiSource
+- widgets.rs
 - model.rs
 - milkdrop.rs
-- theme.rs
+- Palette
 - Option
 - ui/mod.rs
 - sonos.rs
 - accessible_app
 - topbar.rs
-- demo.rs
+- ui/lyrics.rs
 - eq.rs
 - images.rs
 - Error
@@ -53,8 +53,8 @@
 - zeroconf.rs
 - Settings
 - zip.rs
-- widgets.rs
-- ProxyConfig
+- .new
+- Http
 - winamp/mod.rs
 - ApiClient
 - Engine
@@ -66,23 +66,23 @@
 - AppDirs
 - WinampState
 - src/settings.rs
-- Vec
+- frame_events
 - player_bar.rs
-- Palette
+- Locale
 - client.rs
 - Finite Scroll Comparison Readme
 - src/sink.rs
 - pixel_text.rs
 - child.rs
-- ApiResponse
+- .storage_notice
 - Top-Result Artist Navigation Visual Review HTML
 - PackageTest
-- ui/lyrics.rs
+- active.rs
 - layout.rs
 - playlist.rs
 - devices.rs
 - Spotifast Contribution Guidelines
-- build-msi.py
+- src/lyrics.rs
 - vis.rs
 - auth.rs
 - config.rs
@@ -91,10 +91,10 @@
 - player.rs
 - overlay.rs
 - backend.rs
-- .enqueue
+- Option
 - view_frame
 - PagedList<T>
-- Locale
+- util.rs
 - search.rs
 - .frame
 - limiter.rs
@@ -103,10 +103,10 @@
 - winamp.rs
 - Spotifast v0.11.0 Release Notes
 - appearance.rs
-- .default
+- .new
 - test_app
-- .parse
-- AudioTap
+- ProxyPassword
+- Ring
 - draw
 - mac_notch.rs
 - win.rs
@@ -115,8 +115,8 @@
 - Dex
 - running-copy.c
 - equalizer.rs
-- Option
-- .new
+- spotifast-android/src/lib.rs
+- .write
 - .send_body
 - TransitionSource
 - egui
@@ -134,7 +134,7 @@
 - Sprite
 - thumbbar.rs
 - branding.rs
-- LibrespotBridge
+- SpotifastMediaSessionService.kt
 - Output
 - Failure
 - dexutil.py
@@ -147,21 +147,21 @@
 - NotchController
 - system_fonts.rs
 - queue.rs
-- Skin
+- .sprite
 - mac_links.rs
 - elf_plt.py
-- WebTokens
+- os
 - a_late_url_from_an_earlier_upload_cannot_replace_the_new_cover
 - Store
 - AudioControl
 - Pitfalls — the failure catalogue
-- .connect
+- sink_builder
 - mac_touchbar_crash_guard.rs
-- .from_response
+- StoredToken
 - PatchMethodExample.java
-- Overlay
+- Presets
 - argparse
-- i18n.rs
+- dialogs.rs
 - Shell
 - font.rs
 - link.rs
@@ -173,10 +173,10 @@
 - .start_pending_rootlist
 - Native Tamper Response — When the Library Kills Its Own Process
 - UninstallTest
-- Grant
+- AudioTap
 - show.rs
 - rootlist_probe.rs
-- stored_grant
+- tray.rs
 - Track
 - artist.rs
 - MiniWindow
@@ -185,7 +185,7 @@
 - super
 - MainActivity.kt
 - DemoDrag
-- Result
+- re
 - Pen
 - LocalState
 - Pen
@@ -194,7 +194,7 @@
 - vmp_diff_harness.py
 - Cli
 - Collaborative Playlist Management
-- populate
+- demo.rs
 - device_shell.py
 - RpcBridge
 - reorder_row
@@ -208,13 +208,13 @@
 - Fullscreen Dark Synchronized Lyrics View
 - autoscroll.rs
 - capabilities.py
-- re
+- dart_disasm.py
 - missing_pulseaudio_properties
 - scan_leaks.py
 - theme
 - Dex patching — choosing and executing the surgical edit
 - localization.rs
-- accessible_action
+- Event
 - check-runtime-libs.c
 - MilkDrop High Frame-Rate Audio Visualization
 - Toolchain — What to Use, How to Invoke It, and Where It Lies
@@ -255,8 +255,8 @@
 - struct
 - Dynamic analysis with Frida
 - sig_probe.py
-- dex_mem_scan.py
-- frida_rpc_serve.py
+- visualizer
+- time
 - dart_pool_strings.py
 - run_probe.py
 - svc_scan.py
@@ -272,7 +272,7 @@
 - stalker_trace.js
 - Native & SO Layer
 - frida_probe.js
-- kernelsu_syscall_mask.py
+- ThumbBar
 - repack.py
 - Long-Task Discipline
 - LSPosed modules — when to deliver a hook instead of a patched APK
@@ -298,14 +298,14 @@
 - AudioFocusManager.kt
 - atomic
 - How It Connects Reference
-- PositionedPage
+- positioned_album_tracks
 - Ad removal
 - Byte-level dex patching — equal-length edits, and the traps that make them fail
 - Code Virtualization & Custom Linkers
 - Desensitization and leak scans — what must leave, and what must stay
 - Java2C and JNI Sinking — the dex is not where the code is
 - Verification — what "done" means
-- Differential hardening (the known-plaintext route to a private opcode table)
+- Lyrics
 - preflight.py
 - PlayerCommand
 - Known limitations — what an installed copy cannot do, and what was never measured
@@ -330,17 +330,36 @@
 - Coverage inventory — the per-route list behind `SKILL.md`'s Coverage section
 - Hand-off boundaries — where this skill ends and another view begins
 - Precedent library — what a pass got right, and how it got there
-- LanguageChoice
-- NavScreen
+- .parse
+- AppNavigation.kt
 - .screencap
 - collect_split_inputs
 - split_report
 - gradlew
-- packaging_icons.rs
-- .get_optional
+- Self
+- String
 - .fmt
 - spotifast-theme
 - spotifast-android
+- Vec
+- Option
+- AuthManager.kt
+- ProxyMode
+- Native DBI and deobfuscation
+- dart_pprefs.py
+- stored_grant
+- Server-side analysis — deciding whether a patch can even matter
+- table_contents
+- menu
+- header
+- mark_rgba
+- procedure
+- .new
+- row
+- Vec
+- Tier 1 — dex and Java
+- MCP tool servers — an external dependency, not a tool on the shelf
+- CardCover
 
 ## God Nodes (most connected - your core abstractions)
 1. `App` - 380 edges
@@ -357,14 +376,14 @@
 ## Surprising Connections (you probably didn't know these)
 - `7. String encoding — get this exactly right` --references--> `payload()`  [INFERRED]
   .agents/skills/apk-reverse/references/dart-aot.md → packaging/test-launchers.py
+- `Personal Spotify Developer App Setup` --implements--> `.PERSONAL`  [INFERRED]
+  docs/_guide/make-it-even-faster.md → src/api/gateway.rs
 - `Personal Spotify Developer App Setup` --references--> `listen_for_redirect()`  [INFERRED]
   docs/_guide/make-it-even-faster.md → src/auth.rs
 - `Loader Circle Icon` --conceptually_related_to--> `spinner()`  [INFERRED]
   assets/icons/loader-circle.svg → src/theme.rs
 - `Speaker Device Icon` --references--> `device_icon()`  [INFERRED]
   assets/icons/speaker.svg → src/ui/devices.rs
-- `Tablet Device Icon` --references--> `device_icon()`  [INFERRED]
-  assets/icons/tablet.svg → src/ui/devices.rs
 
 ## Import Cycles
 - 1-file cycle: `src/settings.rs -> src/settings.rs`
@@ -398,7 +417,7 @@
 - **Spotifast Visual Brand and Icon Evolution** — packaging_icons_spotifast_app_icon, packaging_macos_icon_1024_app_icon, packaging_release_notes_v0_11_1_icon_comparison_screenshot, packaging_release_notes_v0_11_2_sign_in_screenshot [INFERRED 0.95]
 - **Spotify Integration and Protocol Boundary** — docs_reference_what_spotify_allows_spotify_api_boundary_matrix, docs_reference_how_it_connects_independent_grants, docs_guide_what_is_spotifast_librespot [INFERRED 0.95]
 
-## Communities (333 total, 45 thin omitted)
+## Communities (352 total, 44 thin omitted)
 
 ### Community 0 - "App"
 Cohesion: 0.03
@@ -409,8 +428,8 @@ Cohesion: 0.04
 Nodes (171): a_chosen_queue_row_plays_at_once_and_takes_the_rows_above(), a_clicked_queue_row_is_found_by_its_song_when_rows_shifted(), a_closing_main_window_never_takes_the_mini_players_size(), a_demo_window_keeps_its_requested_geometry_over_the_saved_session(), a_distant_playlist_position_needs_one_direct_request(), a_header_without_a_cover_takes_the_library_lists(), a_header_without_a_public_flag_takes_the_library_lists(), a_header_without_an_owner_name_takes_a_known_one() (+163 more)
 
 ### Community 2 - "collection.rs"
-Cohesion: 0.08
-Nodes (45): TableSort, a_blend_counts_the_people_it_blends(), a_filter_with_no_loaded_matches_keeps_fetching(), a_shared_playlist_counts_everyone_but_its_owner(), absolute_row_index(), actions_row(), adders(), album_sort_keeps_each_album_in_track_order() (+37 more)
+Cohesion: 0.09
+Nodes (42): a_blend_counts_the_people_it_blends(), a_filter_with_no_loaded_matches_keeps_fetching(), a_shared_playlist_counts_everyone_but_its_owner(), actions_row(), adders(), album_sort_keeps_each_album_in_track_order(), album_sort_keeps_same_named_albums_apart(), cached_table_items() (+34 more)
 
 ### Community 3 - "app.rs"
 Cohesion: 0.03
@@ -421,24 +440,24 @@ Cohesion: 0.07
 Nodes (47): a_cached_list_restored_offline_is_read_again_with_the_network(), a_failed_home_refresh_behind_cached_shelves_is_read_again(), a_failed_playlist_page_is_no_longer_awaited(), a_first_load_cut_off_between_pages_keeps_its_pages_and_resumes(), a_home_answer_asked_for_before_sign_out_is_not_taken(), a_late_cache_does_not_bring_back_answered_podcasts(), a_late_cache_does_not_replace_the_live_playlist_list(), a_late_home_cache_does_not_replace_live_shelves() (+39 more)
 
 ### Community 5 - "Worker"
-Cohesion: 0.07
-Nodes (35): AbortHandle, CredentialLease, CredentialSlot, ApiSource, Display, StoredToken, a_dropped_session_comes_back_at_the_level_being_heard(), a_sign_in_right_after_sign_out_keeps_its_caches() (+27 more)
+Cohesion: 0.09
+Nodes (23): AbortHandle, a_dropped_session_comes_back_at_the_level_being_heard(), a_sign_in_right_after_sign_out_keeps_its_caches(), audio_settings_cannot_revert_a_proxy_waiting_for_its_ui_acknowledgement(), new_empty_queries_and_signout_cancel_searches_waiting_for_shared_access(), old_api_and_verification_errors_cannot_sign_out_a_new_session(), playlist_cache_store_does_not_hold_up_the_command_loop(), playlist_cache_writer_rejects_excess_snapshots_without_blocking_commands() (+15 more)
 
-### Community 6 - "src/lyrics.rs"
-Cohesion: 0.05
-Nodes (65): hashmap, a_failed_save_keeps_the_history_to_write(), a_play_with_no_time_sinks_to_the_end(), a_saved_history_reads_back_whole(), COUNTS_AFTER, History, KEPT, merged() (+57 more)
+### Community 6 - "history.rs"
+Cohesion: 0.09
+Nodes (21): hashmap, a_failed_save_keeps_the_history_to_write(), a_play_with_no_time_sinks_to_the_end(), a_saved_history_reads_back_whole(), COUNTS_AFTER, History, KEPT, merged() (+13 more)
 
 ### Community 7 - ".new"
 Cohesion: 0.11
-Nodes (45): a_new_checkpoint_atomically_replaces_the_previous_one(), a_request_asks_the_session_for_a_header_or_a_page_or_nothing(), CachedPlaylist, cleanup_unreferenced_playlist_rows(), cover_upload_uses_the_existing_playlist_mutation_route(), create_playlist_data_file(), failed_checkpoint_keeps_existing_data_and_cleans_only_its_temporary_file(), incremental_cache_replaces_changed_snapshot_and_keeps_legacy_reader() (+37 more)
+Nodes (45): a_new_checkpoint_atomically_replaces_the_previous_one(), a_request_asks_the_session_for_a_header_or_a_page_or_nothing(), CachedPlaylist, cleanup_unreferenced_playlist_rows(), cover_confirmation_checks_the_largest_image_without_spotify_credentials(), cover_upload_uses_the_existing_playlist_mutation_route(), create_playlist_data_file(), failed_checkpoint_keeps_existing_data_and_cleans_only_its_temporary_file() (+37 more)
 
 ### Community 8 - "sidebar.rs"
 Cohesion: 0.09
 Nodes (79): LibrarySort, added_sort_uses_actual_instants_and_keeps_missing_dates_last(), app(), apply_actions(), COMPACT_ROW_HEIGHT, contents(), cover_play_button(), DEFAULT_ROW_HEIGHT (+71 more)
 
 ### Community 9 - "models.rs"
-Cohesion: 0.08
-Nodes (45): a_header_takes_from_the_list_only_what_it_lacks(), Album, ApiErrorBody, ApiErrorDetail, Artist, ArtistRef, Copyright, CursorPage (+37 more)
+Cohesion: 0.07
+Nodes (51): a_header_takes_from_the_list_only_what_it_lacks(), Album, ApiErrorBody, ApiErrorDetail, Artist, ArtistRef, Copyright, CursorPage (+43 more)
 
 ### Community 10 - "default_skin.rs"
 Cohesion: 0.09
@@ -452,25 +471,25 @@ Nodes (35): SavedTrack, a_refresh_keeps_the_old_prefix_until_its_replacement_is_
 Cohesion: 0.11
 Nodes (34): epaint, guirounding_as, layoutjob, a_shaped_word_longer_than_the_column_is_drawn_inside_it(), assert_mark_drawn_leftmost(), assert_rows_follow_uba(), check_drawn_order(), ELLIPSIS (+26 more)
 
-### Community 13 - "Session"
+### Community 13 - "ApiSource"
 Cohesion: 0.08
-Nodes (34): ApiClient, Borrow, fmt, future, AccountId, ApiGateway, ApiProfile, .SHARED (+26 more)
+Nodes (37): ApiClient, Borrow, fmt, future, AccountId, ApiGateway, ApiProfile, .PERSONAL (+29 more)
 
-### Community 14 - "Ui"
-Cohesion: 0.09
-Nodes (53): CornerRadius, SizedTexture, PlayableItem, RowPick, Icon, add_to_playlist_menu(), artist_links(), Columns (+45 more)
+### Community 14 - "widgets.rs"
+Cohesion: 0.07
+Nodes (84): CornerRadius, PopupCloseBehavior, SizedTexture, RowPick, Icon, a_setting_row_puts_a_control_that_leaves_no_room_below_its_text(), a_setting_row_wraps_its_description_before_a_wide_control(), add_to_playlist_menu() (+76 more)
 
 ### Community 15 - "model.rs"
-Cohesion: 0.09
-Nodes (55): Action, album_retained_bytes(), AlbumPage, artist_ref_retained_bytes(), ArtistPage, BackgroundActivity, CursorList, Dialog (+47 more)
+Cohesion: 0.08
+Nodes (57): Action, album_retained_bytes(), AlbumPage, artist_ref_retained_bytes(), ArtistPage, BackgroundActivity, CursorList, Dialog (+49 more)
 
 ### Community 16 - "milkdrop.rs"
-Cohesion: 0.08
-Nodes (36): lag, a_pack_is_unpacked_flat(), an_empty_folder_asks_for_nothing(), CROSSFADE_SECONDS, DEFAULT_FPS, DEFAULT_SECONDS, DEFAULT_SIZE, fetch_pack() (+28 more)
+Cohesion: 0.10
+Nodes (25): lag, a_pack_is_unpacked_flat(), CROSSFADE_SECONDS, DEFAULT_FPS, DEFAULT_SECONDS, DEFAULT_SIZE, fetch_pack(), fps_label() (+17 more)
 
-### Community 17 - "theme.rs"
-Cohesion: 0.05
-Nodes (86): Heart Filled Icon, Heart Icon, House Icon, Laptop Icon, Layout Grid Icon, Layout List Icon, Library Icon, List End Icon (+78 more)
+### Community 17 - "Palette"
+Cohesion: 0.04
+Nodes (95): Heart Filled Icon, Heart Icon, House Icon, Laptop Icon, Layout Grid Icon, Layout List Icon, Library Icon, List End Icon (+87 more)
 
 ### Community 18 - "Option"
 Cohesion: 0.04
@@ -481,20 +500,20 @@ Cohesion: 0.07
 Nodes (47): CursorIcon, ResizeDirection, blend(), caption_space_belongs_to_the_outermost_header(), central(), controls_reservation(), GRID_ART_TARGET_WIDTH, header_shadow() (+39 more)
 
 ### Community 20 - "sonos.rs"
-Cohesion: 0.08
-Nodes (35): MutexGuard, serde_json, ApiError, From, a_lone_track_plays_as_a_one_page_context(), a_playlist_starts_at_the_named_song(), command(), command_body() (+27 more)
+Cohesion: 0.07
+Nodes (34): MutexGuard, ApiError, From, RemoteAction, a_lone_track_plays_as_a_one_page_context(), a_playlist_starts_at_the_named_song(), command(), command_body() (+26 more)
 
 ### Community 21 - "accessible_app"
-Cohesion: 0.11
-Nodes (46): Role, accessible_app(), accessible_frame(), accessible_navigation_and_pause_work_without_a_pointer(), accessible_node(), accessible_playing_and_queued_copies_target_their_own_context(), accessible_sliders_accept_keyboard_and_screen_reader_values(), accessible_song_focus_survives_visible_row_changes_and_keeps_duplicates_distinct() (+38 more)
+Cohesion: 0.10
+Nodes (44): Role, accessible_app(), accessible_frame(), accessible_navigation_and_pause_work_without_a_pointer(), accessible_node(), accessible_playing_and_queued_copies_target_their_own_context(), accessible_sliders_accept_keyboard_and_screen_reader_values(), accessible_song_focus_survives_visible_row_changes_and_keeps_duplicates_distinct() (+36 more)
 
 ### Community 22 - "topbar.rs"
 Cohesion: 0.07
-Nodes (43): a_right_panel_can_narrow_search_after_the_badges_collapse(), a_wide_bar_keeps_the_field_it_always_had(), AVATAR_SIZE, badge(), BADGE_CHIP, BADGE_PADDING_Y, badge_width(), capitalize() (+35 more)
+Nodes (44): pick_image, a_right_panel_can_narrow_search_after_the_badges_collapse(), a_wide_bar_keeps_the_field_it_always_had(), AVATAR_SIZE, badge(), BADGE_CHIP, BADGE_PADDING_Y, badge_width() (+36 more)
 
-### Community 23 - "demo.rs"
-Cohesion: 0.09
-Nodes (33): instant, jiff, ALBUMS, an_idle_sonos_in_the_picker_transfers_instead_of_authorizing(), apply_flags(), artist_ref(), ARTISTS, cover_editing_fits_large_and_narrow_windows_in_both_themes() (+25 more)
+### Community 23 - "ui/lyrics.rs"
+Cohesion: 0.15
+Nodes (29): ScrollAnimation, background(), big_cover(), blend(), contents(), COVER_BESIDE_MIN_WIDTH, cover_uv(), fullscreen() (+21 more)
 
 ### Community 24 - "eq.rs"
 Cohesion: 0.10
@@ -509,28 +528,28 @@ Cohesion: 0.14
 Nodes (18): Entry, Error, Lease, Loaded, Marker, native_error(), NativeStore, ProtectedStore (+10 more)
 
 ### Community 27 - "String"
-Cohesion: 0.08
-Nodes (28): FileHandle, Prepared, ApiRequest, AuthStatus, Backend, Command, Event, friendly_connect_error() (+20 more)
+Cohesion: 0.09
+Nodes (25): FileHandle, Prepared, ApiRequest, AuthStatus, Backend, Command, Event, LocalPlayback (+17 more)
 
 ### Community 28 - "notch.rs"
 Cohesion: 0.07
 Nodes (27): can_toggle_saved(), COMMANDS, compute_notch_geometry(), compute_notch_geometry_rules(), detect_incremental_changes(), drain_commands(), incremental_changes_detection_rules(), IncrementalChanges (+19 more)
 
 ### Community 29 - "ui/settings.rs"
-Cohesion: 0.09
-Nodes (38): DragValue, N, pick_image, Slider, a_setting_slider_draws_its_rail_and_value_box(), clear_search(), eq_curve(), eq_slider() (+30 more)
+Cohesion: 0.10
+Nodes (37): DragValue, N, Slider, a_setting_slider_draws_its_rail_and_value_box(), clear_search(), eq_curve(), eq_slider(), filtered_row() (+29 more)
 
 ### Community 30 - "window.rs"
 Cohesion: 0.07
 Nodes (34): connection, connectionext_as, RawDisplayHandle, RawWindowHandle, ADD, an_unmapped_x11_window_keeps_its_states_and_skips_the_taskbar(), CUSTOM_TITLEBAR, custom_titlebar_for() (+26 more)
 
 ### Community 31 - "session_reads.rs"
-Cohesion: 0.07
-Nodes (47): CountryTopTracks, engine_as, extended_metadata, ExtensionKind, metadata_as, playlist4_external, PlaylistAttributes, playlistitem_as_sessionrow (+39 more)
+Cohesion: 0.08
+Nodes (27): engine_as, extended_metadata, metadata_as, playlist4_external, PlaylistAttributes, playlistitem_as_sessionrow, protobuf, SessionAlbum (+19 more)
 
 ### Community 32 - "NowPlayingBottomSheet.kt"
-Cohesion: 0.06
-Nodes (68): alignment, Composable, Modifier, Track, MiniPlayerBar(), Composable, Modifier, Playlist (+60 more)
+Cohesion: 0.07
+Nodes (55): alignment, Composable, Modifier, Track, MiniPlayerBar(), Composable, Modifier, Playlist (+47 more)
 
 ### Community 33 - "single_instance.rs"
 Cohesion: 0.11
@@ -538,39 +557,39 @@ Nodes (33): a_client_reaches_the_command_queue_and_the_snapshot(), a_second_laun
 
 ### Community 34 - "zeroconf.rs"
 Cohesion: 0.10
-Nodes (35): anyhow, cipher, dhlocalkeys, engine, hmac, sha1, add_user(), AddUserReply (+27 more)
+Nodes (34): anyhow, cipher, dhlocalkeys, engine, hmac, add_user(), AddUserReply, discover() (+26 more)
 
 ### Community 35 - "Settings"
-Cohesion: 0.07
-Nodes (26): a_legacy_socks_url_becomes_socks_mode(), a_new_session_atomically_replaces_the_previous_one(), a_settings_file_saved_with_a_byte_order_mark_keeps_its_preferences(), CachedRootlist, HomeSettings, HomeShelfSettings, infer_legacy_proxy_mode(), PlayerBarVis (+18 more)
+Cohesion: 0.15
+Nodes (11): CachedRootlist, LibraryShelf, ProxyPreferences, BTreeMap, CustomTheme, Debug, String, Vec (+3 more)
 
 ### Community 36 - "zip.rs"
 Cohesion: 0.10
 Nodes (31): read, a_trailing_comment_does_not_hide_the_end_record(), an_archive_without_its_end_record_is_not_one(), an_entry_that_runs_past_the_end_is_reported_rather_than_read_past(), Archive, Archive<'a>, CENTRAL_HEADER, DEFLATED (+23 more)
 
-### Community 37 - "widgets.rs"
-Cohesion: 0.06
-Nodes (67): PopupCloseBehavior, a_click_on_a_visible_virtual_row_still_fires(), a_setting_row_puts_a_control_that_leaves_no_room_below_its_text(), a_setting_row_wraps_its_description_before_a_wide_control(), an_ordinary_setting_row_keeps_its_control_beside_the_text(), AUTHOR_URL, card(), CARD_GAP (+59 more)
+### Community 37 - ".new"
+Cohesion: 0.12
+Nodes (33): a_click_on_a_visible_virtual_row_still_fires(), editing_a_proxy_endpoint_clears_its_password_but_password_entry_is_preserved(), labeled_field(), load_more_asks_when_the_list_end_is_near(), load_more_waits_until_a_long_list_is_near_the_end(), load_more_when_near_end(), proxy_manual_form(), Event (+25 more)
 
-### Community 38 - "ProxyConfig"
+### Community 38 - "Http"
 Cohesion: 0.16
-Nodes (26): ClientBuilder, apply_blocking_proxy(), apply_proxy(), blocking_builder(), build_blocking(), build_client(), client_builder(), Http (+18 more)
+Nodes (25): ClientBuilder, apply_blocking_proxy(), apply_proxy(), blocking_builder(), build_blocking(), build_client(), client_builder(), Http (+17 more)
 
 ### Community 39 - "winamp/mod.rs"
-Cohesion: 0.10
-Nodes (30): pixeltext, Popup, a_seek_in_progress_says_where_it_is_going(), balance_of(), dropped_skins(), fit_window(), initial_size(), marquee() (+22 more)
+Cohesion: 0.15
+Nodes (36): pixeltext, NowPlaying, ArtistRef, a_seek_in_progress_says_where_it_is_going(), balance_of(), clutter_bar(), dropped_skins(), fit_window() (+28 more)
 
 ### Community 40 - "ApiClient"
-Cohesion: 0.13
-Nodes (11): ApiClient, Album, Artist, Device, Page, Playlist, PlaylistItem, Result (+3 more)
+Cohesion: 0.10
+Nodes (15): Method, ApiClient, Album, Artist, Device, Option, Page, PlaybackState (+7 more)
 
 ### Community 41 - "Engine"
 Cohesion: 0.08
 Nodes (24): c_char, crossfade_seconds, Framebuffer, glow, projectm_handle, projectm_sys_as_pm, Copy, CUT (+16 more)
 
 ### Community 42 - "skin/mod.rs"
-Cohesion: 0.13
-Nodes (27): Config, Files, a_folder_of_bitmaps_is_a_skin_too(), a_folder_skin_is_read_from_the_folder_it_was_unpacked_into(), a_real_bmp_decodes_whatever_it_is_called(), a_sheet_too_small_for_a_sprite_gives_what_it_has(), a_skin_saved_with_a_byte_order_mark_is_still_read(), an_unreadable_bitmap_is_skipped_not_fatal() (+19 more)
+Cohesion: 0.12
+Nodes (28): Config, Files, a_folder_of_bitmaps_is_a_skin_too(), a_folder_skin_is_read_from_the_folder_it_was_unpacked_into(), a_sheet_too_small_for_a_sprite_gives_what_it_has(), a_skin_saved_with_a_byte_order_mark_is_still_read(), an_unreadable_bitmap_is_skipped_not_fatal(), BUILTIN_ARCHIVE (+20 more)
 
 ### Community 43 - ".radio_name"
 Cohesion: 0.17
@@ -594,27 +613,27 @@ Nodes (7): projectdirs, account_file_name(), AppDirs, PathBuf, Result, Self, Str
 
 ### Community 48 - "WinampState"
 Cohesion: 0.10
-Nodes (23): Rng, a_random_skin_is_never_the_one_it_replaces(), a_short_title_sits_still_and_a_long_one_scrolls(), labels_drop_the_archive_extension_only(), Loaded, pick_another(), Arc, FnOnce (+15 more)
+Nodes (20): Rng, a_random_skin_is_never_the_one_it_replaces(), a_short_title_sits_still_and_a_long_one_scrolls(), labels_drop_the_archive_extension_only(), marquee_strip(), pick_another(), Arc, FnOnce (+12 more)
 
 ### Community 49 - "src/settings.rs"
-Cohesion: 0.08
-Nodes (19): a_chosen_skin_round_trips(), a_proxy_round_trips_through_settings(), an_empty_proxy_is_omitted_from_the_file(), compact_sidebar_round_trips(), compact_tracklist_round_trips(), default_buffer_ms(), hidden_sidebar_round_trips(), language_follows_the_system_unless_a_known_locale_was_chosen() (+11 more)
+Cohesion: 0.09
+Nodes (17): a_chosen_skin_round_trips(), a_proxy_round_trips_through_settings(), a_saved_proxy_password_is_bound_to_its_endpoint_and_username(), an_empty_proxy_is_omitted_from_the_file(), compact_sidebar_round_trips(), compact_tracklist_round_trips(), default_buffer_ms(), hidden_sidebar_round_trips() (+9 more)
 
-### Community 50 - "Vec"
-Cohesion: 0.12
-Nodes (22): ApiPage, an_empty_search_half_is_not_reported_as_no_results_while_the_other_waits_or_fails(), demo_added_at(), demo_sound(), dragging_a_queued_row_scrolls_a_long_playing_next(), menu_text(), page(), played_contexts() (+14 more)
+### Community 50 - "frame_events"
+Cohesion: 0.09
+Nodes (34): ApiPage, an_empty_search_half_is_not_reported_as_no_results_while_the_other_waits_or_fails(), an_idle_sonos_in_the_picker_transfers_instead_of_authorizing(), apply_flags(), demo_sound(), dragging_a_queued_row_scrolls_a_long_playing_next(), dragging_a_queued_row_while_next_advances_moves_the_dragged_song(), dragging_a_queued_row_within_the_queue_reorders_it() (+26 more)
 
 ### Community 51 - "player_bar.rs"
-Cohesion: 0.08
-Nodes (49): Skip Back Icon, Skip Forward Icon, Skip Forward Filled Icon, Volume Icon, Low Volume Icon, palette, repeatmode, a_new_session_does_not_reuse_the_previous_tint() (+41 more)
+Cohesion: 0.07
+Nodes (30): Skip Back Icon, Skip Forward Icon, Skip Forward Filled Icon, Volume Icon, Low Volume Icon, palette, repeatmode, a_new_session_does_not_reuse_the_previous_tint() (+22 more)
 
-### Community 52 - "Palette"
-Cohesion: 0.17
-Nodes (15): Base, SortColumn, a_local_palette_keeps_spotifasts_widget_style_local(), apply(), apply_local(), apply_to_style(), Palette, palettes_keep_the_desktops_text_rendering() (+7 more)
+### Community 52 - "Locale"
+Cohesion: 0.06
+Nodes (18): fastframe_i18n, LanguageTag, Cow, Locale, LOCALES, Option, Self, String (+10 more)
 
 ### Community 53 - "client.rs"
-Cohesion: 0.13
-Nodes (17): deserializeowned, hashset, reqwest, BASE_URL, cooldown_state_is_owned_by_one_session(), cover_upload_sends_raw_base64_jpeg_and_reports_spotify_errors(), MAX_BACKGROUND_IN_FLIGHT, MAX_IN_FLIGHT (+9 more)
+Cohesion: 0.09
+Nodes (29): deserializeowned, hashset, reqwest, SemaphorePermit, serde_json, BASE_URL, cooldown_state_is_owned_by_one_session(), cover_upload_sends_raw_base64_jpeg_and_reports_spotify_errors() (+21 more)
 
 ### Community 54 - "Finite Scroll Comparison Readme"
 Cohesion: 0.24
@@ -626,27 +645,27 @@ Nodes (30): fastframe_audio, OutputOptions, a_deep_queue_does_not_stretch_the_ra
 
 ### Community 56 - "pixel_text.rs"
 Cohesion: 0.11
-Nodes (24): FontRef, GlyphId, HintingInstance, instance, metadataprovider_as, outline, a_line_is_ink_on_nothing_at_the_skin_size(), a_script_the_face_lacks_comes_from_a_borrowed_face() (+16 more)
+Nodes (23): FontRef, GlyphId, HintingInstance, instance, outline, a_line_is_ink_on_nothing_at_the_skin_size(), a_script_the_face_lacks_comes_from_a_borrowed_face(), CACHE_LIMIT (+15 more)
 
 ### Community 57 - "child.rs"
 Cohesion: 0.06
 Nodes (53): ActiveEventLoop, ApplicationHandler, configtemplatebuilder, display, displaybuilder, dpi, event, event_loop (+45 more)
 
-### Community 58 - "ApiResponse"
-Cohesion: 0.07
-Nodes (34): ApiResult, a_session_answer_settles_like_a_web_api_one(), AlbumTypeLookup, AlbumTypeRequest, ApiResponse, handle(), is_terminal_credential_error(), observe_playlists() (+26 more)
+### Community 58 - ".storage_notice"
+Cohesion: 0.14
+Nodes (12): CredentialLease, CredentialSlot, an_invalid_saved_proxy_keeps_restored_network_work_blocked(), explicit_proxy_apply_can_complete_before_native_restoration(), old_protected_web_grants_wait_for_cover_consent_without_erasing_credentials(), Arc, Fn, Loaded (+4 more)
 
 ### Community 59 - "Top-Result Artist Navigation Visual Review HTML"
 Cohesion: 0.06
 Nodes (31): MacBook Desktop Notch Widget Collapsed Settings Screenshot, MacBook Desktop Notch Widget Expanded Paused Screenshot, MacBook Desktop Notch Widget Expanded Playing Screenshot, MacBook Notch Widget Collapsed Detail Screenshot, MacBook Notch Widget Expanded Playing Detail Screenshot, MacBook Notch Widget Paused Detail Screenshot, MacBook Notch Widget Spotify Connect Remote Detail Screenshot, MacBook Notch Widget Overlay Pattern (+23 more)
 
 ### Community 60 - "PackageTest"
-Cohesion: 0.12
-Nodes (20): handle(), log(), main(), pump(), Minimal HTTP/HTTPS forward proxy for giving an offline Android device network…, Copy a -> b in one direction until either end closes., read_head(), select_select() (+12 more)
+Cohesion: 0.09
+Nodes (30): handle(), log(), main(), pump(), Minimal HTTP/HTTPS forward proxy for giving an offline Android device network…, Copy a -> b in one direction until either end closes., read_head(), select_select() (+22 more)
 
-### Community 61 - "ui/lyrics.rs"
-Cohesion: 0.06
-Nodes (61): LayerId, ScrollAnimation, Active, Area, Autoscroll, Candidate, DEAD_ZONE, FRAME_ID (+53 more)
+### Community 61 - "active.rs"
+Cohesion: 0.09
+Nodes (32): LayerId, Active, Area, Autoscroll, Candidate, DEAD_ZONE, FRAME_ID, Input (+24 more)
 
 ### Community 62 - "layout.rs"
 Cohesion: 0.06
@@ -664,17 +683,17 @@ Nodes (15): Speaker Device Icon, Tablet Device Icon, TV Device Icon, Watch Devic
 Cohesion: 0.15
 Nodes (18): Spotifast Agent Architecture Guide, Optimistic UI Principle, Spotifast Product Scope Boundaries, Claude Code Graphify Rules, CodeRabbit Review Configuration, Spotifast Core Design Principles, Spotifast Contribution Guidelines, Visual Review Protocol (+10 more)
 
-### Community 66 - "build-msi.py"
-Cohesion: 0.21
-Nodes (13): build(), file_version(), license_rtf(), main(), numeric_version(), pe_machine(), Runs a tool and shows its output; a failure ends the build with it., Build the Windows Installer package (spotifast.wxs) from a release binary.… (+5 more)
+### Community 66 - "src/lyrics.rs"
+Cohesion: 0.14
+Nodes (18): sha1, API, BRACKET_NOISE, cache_key(), CACHE_LIFETIME, clean_artist(), clean_title(), fold() (+10 more)
 
 ### Community 67 - "vis.rs"
 Cohesion: 0.07
-Nodes (27): audio_backend, BARS, CATCH_UP, CHANNEL_SUM, COLUMNS, FALLOFF, FFT_SAMPLES, KEPT (+19 more)
+Nodes (25): audio_backend, BARS, CATCH_UP, CHANNEL_SUM, COLUMNS, FALLOFF, FFT_SAMPLES, KEPT (+17 more)
 
 ### Community 68 - "auth.rs"
-Cohesion: 0.11
-Nodes (28): rngcore, sha2, socketaddr, AUTHORIZE_URL, DEFAULT_WEB_CLIENT_ID, failure_page(), listen_for_redirect(), LOGIN_TIMEOUT (+20 more)
+Cohesion: 0.09
+Nodes (42): rngcore, sha2, socketaddr, AUTHORIZE_URL, begin(), begin_produces_valid_pkce_material(), decode_token_response(), DEFAULT_WEB_CLIENT_ID (+34 more)
 
 ### Community 69 - "config.rs"
 Cohesion: 0.12
@@ -689,32 +708,32 @@ Cohesion: 0.07
 Nodes (57): analyse_payload(), apply_split(), ascii_escape(), build_parser(), Ctx, decode(), do_reencode(), _element_preview() (+49 more)
 
 ### Community 72 - "player.rs"
-Cohesion: 0.11
-Nodes (21): AudioItem, librespot_connect, librespot_metadata, sink, a_mid_song_load_marks_the_state_loading_until_it_starts(), a_replay_of_the_same_track_reports_its_start_as_a_seek(), apply_event(), each_loaded_track_has_a_new_history_sequence_but_seek_and_pause_do_not() (+13 more)
+Cohesion: 0.10
+Nodes (23): AudioItem, librespot_connect, librespot_metadata, sink, a_mid_song_load_marks_the_state_loading_until_it_starts(), a_replay_of_the_same_track_reports_its_start_as_a_seek(), an_interrupted_track_is_remembered_with_its_position(), apply_event() (+15 more)
 
 ### Community 73 - "overlay.rs"
-Cohesion: 0.11
-Nodes (26): hascontext_as, halign_for(), a_corner_lines_its_text_up_on_its_own_edge(), Align, Backing, backings_are_drawn_under_the_text(), block_rgba(), BOX_ALPHA (+18 more)
+Cohesion: 0.07
+Nodes (41): Buffer, hascontext_as, Program, halign_for(), a_corner_lines_its_text_up_on_its_own_edge(), Align, Backing, backings_are_drawn_under_the_text() (+33 more)
 
 ### Community 74 - "backend.rs"
-Cohesion: 0.06
-Nodes (51): albumtypelookup, api, Elapsed, playlistheaderlookup, a_mismatched_grant_cannot_replace_the_verified_playback_account(), a_playback_browser_result_after_sign_out_cannot_start_an_engine(), a_rejected_proxy_change_does_not_replace_the_live_configuration(), ALBUM_TYPE_TIMEOUT (+43 more)
+Cohesion: 0.04
+Nodes (70): albumtypelookup, api, ApiResult, Elapsed, playlistheaderlookup, a_mismatched_grant_cannot_replace_the_verified_playback_account(), a_playback_browser_result_after_sign_out_cannot_start_an_engine(), a_rejected_proxy_change_does_not_replace_the_live_configuration() (+62 more)
 
-### Community 75 - ".enqueue"
-Cohesion: 0.15
-Nodes (13): a_playlist_header_finishing_while_signed_out_is_read_again(), a_playlist_header_read_on_a_retired_engine_is_read_again(), clearing_engine_work_drops_waiting_playlist_headers(), completed_failures_remain_terminal_for_the_session(), non_premium_status_clears_and_invalidates_all_engine_work(), playlist_headers_are_read_one_at_a_time(), PlaylistHeaderLookup, PlaylistHeaderRequest (+5 more)
+### Community 75 - "Option"
+Cohesion: 0.09
+Nodes (20): a_playlist_header_finishing_while_signed_out_is_read_again(), a_playlist_header_read_on_a_retired_engine_is_read_again(), AlbumTypeLookup, AlbumTypeRequest, clearing_engine_work_drops_waiting_playlist_headers(), completed_failures_remain_terminal_for_the_session(), is_terminal_credential_error(), non_premium_status_clears_and_invalidates_all_engine_work() (+12 more)
 
 ### Community 76 - "view_frame"
-Cohesion: 0.13
-Nodes (28): clicking_the_cover_of_the_playing_playlist_pauses(), compact_track_rows_leave_a_gap_before_the_added_date_separator(), double_click(), double_clicking_a_library_grid_card_only_navigates(), double_clicking_a_sidebar_cover_plays_once(), double_clicking_a_sidebar_folder_plays_nothing(), double_clicking_a_sidebar_liked_row_plays_the_collection(), double_clicking_a_sidebar_row_plays_its_context() (+20 more)
+Cohesion: 0.12
+Nodes (31): choosing_a_language_redraws_the_interface_at_once_and_is_saved(), clicking_the_cover_of_the_playing_playlist_pauses(), compact_track_rows_leave_a_gap_before_the_added_date_separator(), custom_theme_picker_applies_the_clicked_palette_and_exposes_its_name_and_value(), double_click(), double_clicking_a_library_grid_card_only_navigates(), double_clicking_a_sidebar_cover_plays_once(), double_clicking_a_sidebar_folder_plays_nothing() (+23 more)
 
 ### Community 77 - "PagedList<T>"
-Cohesion: 0.08
-Nodes (19): E, a_failed_backward_window_can_retry_from_the_end(), adjacent_windows_join_in_both_directions(), catalog_pages_keep_rows_when_nulls_shorten_a_page(), CursorList<T>, distant_windows_keep_the_total_and_return_without_a_request(), failed_window_does_not_retry_every_frame(), filling_a_partial_window_keeps_existing_rows_visible() (+11 more)
+Cohesion: 0.09
+Nodes (18): E, a_failed_backward_window_can_retry_from_the_end(), adjacent_windows_join_in_both_directions(), catalog_pages_keep_rows_when_nulls_shorten_a_page(), CursorList<T>, distant_windows_keep_the_total_and_return_without_a_request(), failed_window_does_not_retry_every_frame(), filling_a_partial_window_keeps_existing_rows_visible() (+10 more)
 
-### Community 78 - "Locale"
-Cohesion: 0.05
-Nodes (40): LanguageTag, Cow, Locale, Option, Self, String, Cow, Cow (+32 more)
+### Community 78 - "util.rs"
+Cohesion: 0.13
+Nodes (21): format_count(), format_date(), format_duration_ms(), format_episode_ms(), format_relative_date(), format_total_ms(), greeting(), local_hour() (+13 more)
 
 ### Community 79 - "search.rs"
 Cohesion: 0.22
@@ -733,12 +752,12 @@ Cohesion: 0.15
 Nodes (22): ImageFormat, Limits, bounded_decode(), Cover, decode(), detailed_image_still_fits_the_encoded_payload_limit(), Draft, matching_remote_art_requires_the_uploaded_pixels() (+14 more)
 
 ### Community 83 - "item"
-Cohesion: 0.15
-Nodes (31): BatchedEntityRequest, BatchedExtensionResponse, EntityExtensionDataArray, SessionRow, a_batch_asks_once_for_each_song_and_episode(), a_partly_failed_batch_is_retried_not_cached_with_empty_rows(), a_row_carries_who_added_it_and_when(), a_song_spotify_no_longer_has_leaves_its_row_empty() (+23 more)
+Cohesion: 0.25
+Nodes (20): BatchedExtensionResponse, EntityExtensionDataArray, a_partly_failed_batch_is_retried_not_cached_with_empty_rows(), a_song_spotify_no_longer_has_leaves_its_row_empty(), a_song_spotify_withholds_leaves_its_row_empty(), an_answer_is_read_by_uri_and_kind(), answer(), answers() (+12 more)
 
 ### Community 84 - "winamp.rs"
-Cohesion: 0.12
-Nodes (19): a_skin_unpacked_into_nested_folders_is_listed(), ARCHIVE_EXTENSIONS, CHOICES_FRESH, has_main_bitmap(), is_archive_extension(), is_skin_file(), label(), list_skins() (+11 more)
+Cohesion: 0.13
+Nodes (20): a_skin_unpacked_into_nested_folders_is_listed(), ARCHIVE_EXTENSIONS, CHOICES_FRESH, has_main_bitmap(), is_archive_extension(), is_skin_file(), label(), list_skins() (+12 more)
 
 ### Community 85 - "Spotifast v0.11.0 Release Notes"
 Cohesion: 0.09
@@ -748,33 +767,33 @@ Nodes (27): Spotifast Flatpak Manifest, Flatpak Sandbox Finish-Args and Permissi
 Cohesion: 0.11
 Nodes (21): a_change_wakes_the_window_once(), color_scheme(), DARK, KEY, LIGHT, NAMESPACE, publish(), Arc (+13 more)
 
-### Community 87 - ".default"
-Cohesion: 0.15
-Nodes (19): a_fast_frame_rate_leaves_the_bars_alone(), a_peak_hangs_then_falls_behind_its_band(), a_short_or_empty_input_does_not_keep_the_previous_spectrum(), Analyser, bands(), Bar, bars_rise_with_sound_and_fall_without(), clock() (+11 more)
+### Community 87 - ".new"
+Cohesion: 0.11
+Nodes (23): a_fast_frame_rate_leaves_the_bars_alone(), a_peak_hangs_then_falls_behind_its_band(), a_short_or_empty_input_does_not_keep_the_previous_spectrum(), Analyser, bands(), Bar, bars_rise_with_sound_and_fall_without(), clock() (+15 more)
 
 ### Community 88 - "test_app"
 Cohesion: 0.06
 Nodes (46): a_chosen_language_applies_at_once_and_survives_a_restart(), a_colour_change_waits_for_the_picture_of_the_old_colours(), a_new_query_or_a_finished_search_keeps_its_own_recent_entry(), a_plain_click_picks_one_row_and_a_second_lets_it_go(), a_random_skin_changes_each_time_the_mini_player_opens(), a_rejected_proxy_change_does_not_announce_success(), a_separate_legacy_password_cannot_be_rebound_by_saving_a_new_address(), an_old_proxy_acknowledgement_cannot_replace_a_newer_applied_policy() (+38 more)
 
-### Community 89 - ".parse"
-Cohesion: 0.10
-Nodes (23): Intercept, Ok, Proxy, S, ProxyPassword, a_saved_proxy_password_is_bound_to_its_endpoint_and_username(), engine_only_accepts_plain_http_proxy_urls(), http_and_socks_parse_a_host_and_port() (+15 more)
+### Community 89 - "ProxyPassword"
+Cohesion: 0.21
+Nodes (9): Intercept, ProxyPassword, http_proxy_from_uri(), librespot_system_proxy(), ManualProxy, Option, Uri, Url (+1 more)
 
-### Community 90 - "AudioTap"
-Cohesion: 0.10
-Nodes (21): MmapMut, FRAME_BYTES, FRAMES, frames_written_are_read_back_once_and_behind_the_lag(), HEADER, Ring, AtomicU64, File (+13 more)
+### Community 90 - "Ring"
+Cohesion: 0.11
+Nodes (17): fs, MmapMut, pathbuf, FRAME_BYTES, FRAMES, frames_written_are_read_back_once_and_behind_the_lag(), HEADER, Ring (+9 more)
 
 ### Community 91 - "draw"
-Cohesion: 0.14
-Nodes (21): a_home_podcast_card_resumes_from_the_place_it_shows(), a_long_device_list_stays_in_the_window_and_scrolls_to_the_last_speaker(), artist(), check_card_menu(), clicking_the_player_bars_empty_space_cycles_the_visualizer(), dragging_at_playlist_edges_reaches_rows_beyond_the_viewport(), episode(), home_cards_open_item_menus() (+13 more)
+Cohesion: 0.11
+Nodes (30): a_home_podcast_card_resumes_from_the_place_it_shows(), a_long_device_list_stays_in_the_window_and_scrolls_to_the_last_speaker(), album(), artist(), check_card_menu(), clicking_the_player_bars_empty_space_cycles_the_visualizer(), dragging_a_library_entry_scrolls_to_offscreen_playlists(), dragging_at_playlist_edges_reaches_rows_beyond_the_viewport() (+22 more)
 
 ### Community 92 - "mac_notch.rs"
 Cohesion: 0.16
 Nodes (24): apply_pending_artwork_locked(), ART_GENERATION, cancel_hover_timers(), complete_collapse_locked(), dispatch_after_f(), dispatch_async_f(), _dispatch_main_q, dispatch_time() (+16 more)
 
 ### Community 93 - "win.rs"
-Cohesion: 0.10
-Nodes (28): accessibility, com, core, foundation, gdi, GUID, HICON, hidpi (+20 more)
+Cohesion: 0.11
+Nodes (22): accessibility, com, core, foundation, gdi, GUID, HICON, hidpi (+14 more)
 
 ### Community 94 - "entrypoint.rs"
 Cohesion: 0.15
@@ -793,20 +812,20 @@ Cohesion: 0.18
 Nodes (23): BOOL, msi, MSIHANDLE, msiquery, allocate(), ask(), CheckRunningCopy(), close_installed_copy() (+15 more)
 
 ### Community 98 - "equalizer.rs"
-Cohesion: 0.15
-Nodes (21): Sense, skin, current(), decibels(), fraction(), graph(), GRAPH_PAD, GRAPH_STEP (+13 more)
+Cohesion: 0.16
+Nodes (20): skin, current(), decibels(), fraction(), graph(), GRAPH_PAD, GRAPH_STEP, look() (+12 more)
 
-### Community 99 - "Option"
+### Community 99 - "spotifast-android/src/lib.rs"
 Cohesion: 0.21
-Nodes (3): SemaphorePermit, Option, String
+Nodes (21): ENGINE_INSTANCE, Java_rocks_spotifast_native_LibrespotBridge_nativeConnect(), Java_rocks_spotifast_native_LibrespotBridge_nativeGetDurationMs(), Java_rocks_spotifast_native_LibrespotBridge_nativeGetPositionMs(), Java_rocks_spotifast_native_LibrespotBridge_nativeInit(), Java_rocks_spotifast_native_LibrespotBridge_nativeIsPlaying(), Java_rocks_spotifast_native_LibrespotBridge_nativeLoadTrack(), Java_rocks_spotifast_native_LibrespotBridge_nativePause() (+13 more)
 
-### Community 100 - ".new"
-Cohesion: 0.12
-Nodes (22): a_confirmed_seek_discards_the_processing_history(), full_scale(), natural_track_changes_and_pause_keep_the_limiter_tail(), recorded_tap(), RecordedSink, replacing_a_track_discards_held_audio_before_its_silent_intro(), AtomicU64, AudioPacket (+14 more)
+### Community 100 - ".write"
+Cohesion: 0.21
+Nodes (9): a_confirmed_seek_discards_the_processing_history(), natural_track_changes_and_pause_keep_the_limiter_tail(), replacing_a_track_discards_held_audio_before_its_silent_intro(), AudioPacket, Converter, SinkResult, the_tap_keeps_half_a_second_at_most(), the_tap_mixes_stereo_down_and_pads_with_silence() (+1 more)
 
 ### Community 101 - ".send_body"
-Cohesion: 0.12
-Nodes (12): AtomicUsize, Method, ActivityGuard, is_quota_exhausted(), MAX_RETRY_AFTER, NetActivity, AtomicU64, Default (+4 more)
+Cohesion: 0.11
+Nodes (11): AtomicUsize, ActivityGuard, is_quota_exhausted(), MAX_RETRY_AFTER, NetActivity, AtomicU64, Default, Drop (+3 more)
 
 ### Community 102 - "TransitionSource"
 Cohesion: 0.13
@@ -817,16 +836,16 @@ Cohesion: 0.11
 Nodes (17): egui, Autoscroll, lyrics(), Outcome, playlist(), row(), FnOnce, Id (+9 more)
 
 ### Community 104 - "sys"
-Cohesion: 0.05
-Nodes (50): adb(), main(), Capture a crash stack when the app's crash-reporter SDK is hiding it. Problem…, su(), adb(), main(), Install an APK and run a launch health check, extracting the signals that…, sh() (+42 more)
+Cohesion: 0.06
+Nodes (37): configparser, importlib_util, check_metainfo(), main(), Use a release's original metainfo, checked against its tag., release_metainfo(), The packaged metainfo must be the release's own, for that version., LauncherInstallTest (+29 more)
 
 ### Community 105 - "Area"
 Cohesion: 0.09
 Nodes (22): Area, EQ_AUTO, EQ_CLOSE, EQ_GRAPH, EQ_ON, EQ_PREAMP, EQ_PRESETS_BUTTON, EQ_SHADE (+14 more)
 
 ### Community 106 - "Spotifast Getting Started Guide"
-Cohesion: 0.15
-Nodes (14): Zap Lightning Icon, Spotifast Getting Started Guide, OAuth Browser Sign-In & Keyring Storage, Build from Source with Cargo & libprojectM, System Font Fallback & CJK/RTL Rendering, Desktop Theme Matching & Omarchy Integration, Spotify Connect Local Playback Setup, Background System Tray Playback (+6 more)
+Cohesion: 0.17
+Nodes (13): Zap Lightning Icon, Spotifast Getting Started Guide, OAuth Browser Sign-In & Keyring Storage, Build from Source with Cargo & libprojectM, System Font Fallback & CJK/RTL Rendering, Desktop Theme Matching & Omarchy Integration, Spotify Connect Local Playback Setup, Background System Tray Playback (+5 more)
 
 ### Community 107 - "dex_patch_bytes.py"
 Cohesion: 0.05
@@ -837,20 +856,20 @@ Cohesion: 0.18
 Nodes (18): pi, a_tone_keeps_its_pitch_and_level_going_down(), a_tone_keeps_its_pitch_and_level_going_up(), check(), chunking_makes_no_difference(), gcd(), input_time(), kernel() (+10 more)
 
 ### Community 109 - "App"
-Cohesion: 0.15
-Nodes (48): Actions, album(), album_actions(), album_hero(), album_loading_actions(), disabled_actions_row(), extend_liked_rows(), Hero (+40 more)
+Cohesion: 0.18
+Nodes (38): TableSort, Actions, album(), album_actions(), album_hero(), album_loading_actions(), contributors_text(), disabled_actions_row() (+30 more)
 
 ### Community 110 - "Engine"
-Cohesion: 0.16
-Nodes (10): PlaybackSnapshot, Spirc, an_interrupted_track_is_remembered_with_its_position(), Engine, Interrupted, PlaybackResume, Arc, AtomicBool (+2 more)
+Cohesion: 0.20
+Nodes (8): Bitrate, Spirc, Engine, Interrupted, AtomicBool, Option, Url, Value
 
 ### Community 111 - "View"
 Cohesion: 0.19
-Nodes (27): NowPlaying, ArtistRef, clutter_bar(), full_window(), options_menu(), pixel_line(), rates(), App (+19 more)
+Nodes (14): Sense, options_menu(), pixel_line(), Area, Color32, HashMap, Painter, Pos2 (+6 more)
 
 ### Community 112 - "AuthManager"
-Cohesion: 0.06
-Nodes (29): AuthManager, Uri, TokenStore, ApiClient, AuthInterceptor, Response, SpotifastApp, Application (+21 more)
+Cohesion: 0.09
+Nodes (20): AuthManager, Uri, TokenStore, ApiClient, AuthInterceptor, Response, SpotifastApp, Application (+12 more)
 
 ### Community 113 - "keys.rs"
 Cohesion: 0.14
@@ -872,21 +891,21 @@ Nodes (15): Button, buttons(), command_for(), COUNT, every_button_answers_for_it
 Cohesion: 0.13
 Nodes (11): command, path, COMMAND, existing_preferences_and_custom_connect_names_survive_a_save(), no_file_carries_the_old_name(), Drop, PathBuf, Self (+3 more)
 
-### Community 118 - "LibrespotBridge"
-Cohesion: 0.07
-Nodes (16): OptIn, Track, SpotifastMediaSessionService, Listener, LibrespotBridge, c, ExoPlayer, mediaitem (+8 more)
+### Community 118 - "SpotifastMediaSessionService.kt"
+Cohesion: 0.11
+Nodes (15): OptIn, Track, SpotifastMediaSessionService, Listener, c, ExoPlayer, mediaitem, mediametadata (+7 more)
 
 ### Community 119 - "Output"
 Cohesion: 0.15
 Nodes (16): MadeMixer, MixerSlot, MixerSource, Render, converter_to(), MixerRender, NO_DEVICE, open_output() (+8 more)
 
 ### Community 120 - "Failure"
-Cohesion: 0.13
-Nodes (29): a_missing_playlist_is_final_and_a_dropped_line_is_not(), a_page_ends_where_the_list_does(), a_short_window_is_not_paged_past(), a_station_lists_each_song_once_in_spotify_order(), artist_top_tracks(), audiobook_shows(), audiobooks_in(), complete() (+21 more)
+Cohesion: 0.20
+Nodes (18): a_missing_playlist_is_final_and_a_dropped_line_is_not(), a_page_ends_where_the_list_does(), a_short_window_is_not_paged_past(), complete(), Failure, items(), page(), playlist() (+10 more)
 
 ### Community 121 - "dexutil.py"
-Cohesion: 0.07
-Nodes (39): analyse_method(), main(), Tier-3 verifier check: does any branch target a `move-result*` instruction? WHY…, Return (findings, clean, detail) for one method body. findings: list of…, scan_image(), Filter, main(), _matches() (+31 more)
+Cohesion: 0.05
+Nodes (48): 1. The method, and the one thing it needs to be true, 2. Cost table — which links can be automated, and which cannot, 3. The coverage fixture — what a compiled probe can and cannot reach, 4. Extracting the correspondence, 5. Proving the table — the part that decides whether any of this is real, 6. Generating Smali from a restored stream, 7. When this route does not work — the honest retreat, 8. Decision summary (+40 more)
 
 ### Community 122 - "Everyday Use Guide"
 Cohesion: 0.11
@@ -901,12 +920,12 @@ Cohesion: 0.09
 Nodes (39): mac_impl, NSApplication, NSEventModifierFlags, NSMenu, NSMenuItem, NSObject, NSString, objc2_app_kit (+31 more)
 
 ### Community 125 - "LibrespotEngine"
-Cohesion: 0.08
-Nodes (34): Command, LibrespotEngine, PlaybackStateDto, Arc, AtomicBool, AtomicU32, AtomicU64, Result (+26 more)
+Cohesion: 0.11
+Nodes (13): Command, LibrespotEngine, PlaybackStateDto, Arc, AtomicBool, AtomicU32, AtomicU64, Result (+5 more)
 
 ### Community 126 - "Attached"
-Cohesion: 0.09
-Nodes (29): Cell, PhantomData, Rc, ThumbState, a_restarted_explorer_gets_the_buttons_again(), Attached, ComApartment, Hook (+21 more)
+Cohesion: 0.13
+Nodes (16): Cell, ThumbState, a_restarted_explorer_gets_the_buttons_again(), Attached, Hook, Arc, AtomicBool, AtomicU32 (+8 more)
 
 ### Community 127 - "Envelope"
 Cohesion: 0.23
@@ -917,16 +936,16 @@ Cohesion: 0.16
 Nodes (17): NSImageView, NSVisualEffectView, NSWindow, SpotifastCardView, SpotifastNotchActionHandler, SpotifastNotchView, CONTROLLER, NotchController (+9 more)
 
 ### Community 129 - "system_fonts.rs"
-Cohesion: 0.21
-Nodes (15): oncelock, asking_the_system_never_panics(), find_family(), FONT_SCAN_DEPTH, is_font_file(), MAX_FACES, PlaylistFace, pledit_face() (+7 more)
+Cohesion: 0.19
+Nodes (16): metadataprovider_as, oncelock, asking_the_system_never_panics(), find_family(), FONT_SCAN_DEPTH, is_font_file(), MAX_FACES, PlaylistFace (+8 more)
 
 ### Community 130 - "queue.rs"
 Cohesion: 0.29
 Nodes (16): playableitem, clear_button(), contents(), page(), queue_drop(), queue_is_empty(), queue_row(), recents_contents() (+8 more)
 
-### Community 131 - "Skin"
-Cohesion: 0.21
-Nodes (10): Bitmap, BUILTIN, Arc, HashMap, LazyLock, Option, VisColors, Skin (+2 more)
+### Community 131 - ".sprite"
+Cohesion: 0.19
+Nodes (11): a_real_bmp_decodes_whatever_it_is_called(), Bitmap, bmp(), BUILTIN, Arc, LazyLock, Option, Vec (+3 more)
 
 ### Community 132 - "mac_links.rs"
 Cohesion: 0.15
@@ -936,9 +955,9 @@ Nodes (13): objc2, objc2_foundation, retained, DIRECT_OBJECT, GET_URL, install()
 Cohesion: 0.07
 Nodes (35): A zero-event trace was manufactured by the harness, not by the target, Assertions and grade, Execution chain (including the dead ends), Metadata, Pits, Reusable pattern, Write back to the repository, cmd_diff() (+27 more)
 
-### Community 134 - "WebTokens"
-Cohesion: 0.19
-Nodes (9): revoked_provider_cannot_return_or_persist_its_token(), Arc, AtomicBool, Fn, Mutex, Send, Sync, TokenProvider (+1 more)
+### Community 134 - "os"
+Cohesion: 0.15
+Nodes (17): build_parser(), fail(), main(), params_java(), Scaffold a minimal LSPosed module project that builds without Gradle. Why this…, java.lang.String,android.content.Context' -> 'java.lang.String.class,…, write_file(), main() (+9 more)
 
 ### Community 135 - "a_late_url_from_an_earlier_upload_cannot_replace_the_new_cover"
 Cohesion: 0.18
@@ -956,33 +975,33 @@ Nodes (9): AudioControl, AudioTarget, confirmed_seek_discards_the_old_position_w
 Cohesion: 0.05
 Nodes (41): P10. Trusting static decompilation over runtime behavior, P11. Assuming a repackaged APK ships runtime data, P12. PowerShell (or any shell) eats device-side commands, P13. Trusting `apksigner verify` output at face value, P14. Treating same-size dex dumps as duplicates, P15. Frida version skew produces errors that look like a broken target, P16. Blaming your own patch for a server-side TLS failure, P18. The package manager reported success, but the build was never installed (+33 more)
 
-### Community 139 - ".connect"
-Cohesion: 0.17
-Nodes (10): Bitrate, SinkAndVolume, SinkBuilder, device_id_is_stable_hex(), librespot_backend(), AtomicU64, Mixer, Notify (+2 more)
+### Community 139 - "sink_builder"
+Cohesion: 0.13
+Nodes (12): PlaybackSnapshot, SinkAndVolume, SinkBuilder, Heard, librespot_backend(), PlaybackResume, Arc, AtomicU64 (+4 more)
 
 ### Community 140 - "mac_touchbar_crash_guard.rs"
 Cohesion: 0.15
 Nodes (12): catch, ffi, Imp, is_known_benign, runtime, is_known_benign(), KNOWN_BENIGN_MARKER, ORIGINAL (+4 more)
 
-### Community 141 - ".from_response"
-Cohesion: 0.27
-Nodes (6): legacy_tokens_move_to_the_matching_session(), now_secs(), Option, Path, stored_token_round_trips_and_tracks_expiry(), write_private()
+### Community 141 - "StoredToken"
+Cohesion: 0.26
+Nodes (8): legacy_tokens_move_to_the_matching_session(), now_secs(), Option, Path, Self, stored_token_round_trips_and_tracks_expiry(), StoredToken, write_private()
 
 ### Community 142 - "PatchMethodExample.java"
 Cohesion: 0.07
 Nodes (30): PatchMethod, PatchMethodExample, Build, dexlib2 method-level patcher, Rules that decide success, Run, Verify, arraylist (+22 more)
 
-### Community 143 - "Overlay"
-Cohesion: 0.11
-Nodes (15): Buffer, Program, Overlay, Placed, quad_bytes(), Raster, Instant, Into (+7 more)
+### Community 143 - "Presets"
+Cohesion: 0.19
+Nodes (8): next_picks_anew_and_previous_walks_back(), Presets, Request, Default, Instant, Option, PathBuf, Result
 
 ### Community 144 - "argparse"
 Cohesion: 0.07
-Nodes (36): build(), lookup(), main(), Dart AOT object-pool reference index: pool offset -> the instructions that load…, Return (vaddr, bytes) of .text, parsing ELF64 section headers directly., scan(), sx(), text_section() (+28 more)
+Nodes (36): cmd_gates(), cmd_generate(), cmd_verify(), main(), kernelsu_syscall_mask.py -- generate a configurable kernel-side syscall-masking…, Fill a template's {placeholders} without str.format(). Braces are the common…, Render the JSON rule set as a C table., Report the kernel-route gate table, and probe this host where it can be probed. (+28 more)
 
-### Community 145 - "i18n.rs"
-Cohesion: 0.12
-Nodes (15): duplicate_message, fastframe_i18n, LOCALES, create_playlist(), duplicate_dialog_names_only_the_duplicates_in_a_selection(), duplicate_dialog_names_the_song(), duplicate_message(), edit_playlist() (+7 more)
+### Community 145 - "dialogs.rs"
+Cohesion: 0.30
+Nodes (13): duplicate_message, create_playlist(), duplicate_dialog_names_only_the_duplicates_in_a_selection(), duplicate_dialog_names_the_song(), duplicate_message(), edit_playlist(), App, Response (+5 more)
 
 ### Community 146 - "Shell"
 Cohesion: 0.18
@@ -1017,16 +1036,16 @@ Cohesion: 0.26
 Nodes (12): MacBook Notch Widget Setting (Candidate After - Dark Narrow), MacBook Notch Widget Setting (Candidate After - Dark Normal), MacBook Notch Widget Setting (Candidate After - Light Narrow), MacBook Notch Widget Setting (Candidate After - Light Normal), MacBook Notch Widget Setting (Baseline Before - Dark Narrow), MacBook Notch Widget Setting (Baseline Before - Dark Normal), MacBook Notch Widget Setting (Baseline Before - Light Narrow), MacBook Notch Widget Setting (Baseline Before - Light Normal) (+4 more)
 
 ### Community 154 - ".start_pending_rootlist"
-Cohesion: 0.40
-Nodes (3): a_rootlist_request_before_the_engine_waits_for_it(), Future, Send
+Cohesion: 0.31
+Nodes (5): a_rootlist_request_before_the_engine_waits_for_it(), Future, signout_cancels_pending_and_completed_rootlist_work(), Rootlist, BTreeSet
 
 ### Community 155 - "Native Tamper Response — When the Library Kills Its Own Process"
 Cohesion: 0.06
 Nodes (33): Combining the routes, Emulation and RPC — running the target's code on your terms, Failure modes you will meet, Filling the environment — "supply what is missing", Measured here, Part A — Unidbg, Part B — Frida RPC, The decision table (+25 more)
 
-### Community 157 - "Grant"
-Cohesion: 0.33
-Nodes (6): begin(), begin_produces_valid_pkce_material(), Flow, Grant, playback_scopes_conform_to_spotify_streaming_contract(), Self
+### Community 157 - "AudioTap"
+Cohesion: 0.18
+Nodes (17): AudioTap, recorded_tap(), RecordedSink, Arc, AtomicU64, Box, Debug, Formatter (+9 more)
 
 ### Community 158 - "show.rs"
 Cohesion: 0.56
@@ -1036,9 +1055,9 @@ Nodes (8): episode_row(), EPISODE_ROW_HEIGHT, App, Option, Ui, show(), show_acti
 Cohesion: 0.20
 Nodes (8): autoplaycontextrequest, main(), Result, main(), Result, librespot_core, message_as, selectedlistcontent
 
-### Community 160 - "stored_grant"
-Cohesion: 0.14
-Nodes (16): bufread, duration, devices(), main(), Option, Result, String, Vec (+8 more)
+### Community 160 - "tray.rs"
+Cohesion: 0.27
+Nodes (7): bufread, process, config(), flatpak_tray_registers_without_owning_a_name(), Sender, String, Watcher
 
 ### Community 161 - "Track"
 Cohesion: 0.09
@@ -1072,17 +1091,17 @@ Nodes (24): Activity, Assertions and grade, Execution chain (including the dead 
 Cohesion: 0.22
 Nodes (7): RawInput, demo_drag_presses_at_the_first_point_and_holds_at_the_second(), DemoDrag, .GLIDE, .REST, Event, Vec
 
-### Community 169 - "Result"
-Cohesion: 0.50
-Nodes (9): decode_token_response(), exchange_code(), refresh(), Client, Result, token_request(), TokenEndpointError, TokenResponse (+1 more)
+### Community 169 - "re"
+Cohesion: 0.16
+Nodes (15): adb(), main(), Install an APK and run a launch health check, extracting the signals that…, sh(), su(), is_system_lib(), load_libs(), main() (+7 more)
 
 ### Community 170 - "Pen"
 Cohesion: 0.33
 Nodes (3): Pen, OutlinePen, PathBuilder
 
 ### Community 171 - "LocalState"
-Cohesion: 0.20
-Nodes (6): EngineEvent, Heard, LocalState, Playback, Instant, Mutex
+Cohesion: 0.33
+Nodes (4): EngineEvent, LocalState, Playback, Instant
 
 ### Community 172 - "Pen"
 Cohesion: 0.33
@@ -1108,17 +1127,17 @@ Nodes (8): Control, Cli, format_now_playing(), parse_demo_drag(), parse_demo_siz
 Cohesion: 0.25
 Nodes (8): Collaborative Playlist Management, Spotifast Collaborative Playlist UI Screenshot, Relative Date Added Demonstration Screenshot, Relative Date Added Timestamps, Playlist Drag-and-Drop Reordering GIF, Drag-and-Drop Track Reordering, Playlist Column Sorting UI Screenshot, Playlist Column Sorting
 
-### Community 178 - "populate"
-Cohesion: 0.12
-Nodes (30): a_long_virtual_queue_and_library_still_draw(), a_toast_is_wide_enough_to_read(), album(), clicking_search_in_library_shelf_focuses_search_field(), dragging_a_queued_row_while_next_advances_moves_the_dragged_song(), dragging_a_queued_row_within_the_queue_reorders_it(), dragging_a_row_within_a_playlist_reorders_it(), dragging_the_now_playing_song_supplies_a_playlist_row() (+22 more)
+### Community 178 - "demo.rs"
+Cohesion: 0.10
+Nodes (37): instant, jiff, a_long_virtual_queue_and_library_still_draw(), a_toast_is_wide_enough_to_read(), ALBUMS, artist_ref(), ARTISTS, clicking_search_in_library_shelf_focuses_search_field() (+29 more)
 
 ### Community 179 - "device_shell.py"
 Cohesion: 0.13
 Nodes (27): adb_shell(), exit_code_for(), main(), POSIX single-quote quoting: the one form that makes every metacharacter literal., Wrap already-validated argv into a single `su -c '<cmd>'` string for the device…, Build an adb argv list. `root=True` routes through `su -c`; `quote=False` sends…, Assert the properties this module claims. Returns a list of (name, ok, detail)., Device-side command construction: quoting, argv, and identifier validation. Why… (+19 more)
 
 ### Community 180 - "RpcBridge"
-Cohesion: 0.11
-Nodes (15): 1. Which obfuscation are you looking at, 2. Pick the observation before you pick the tool, 3. Recording a trace with `scripts/stalker_trace.js`, 4. Stalker, QBDI, or emulation, 5. From a trace to a deobfuscated function (inferred), 6. Failure modes, 7. Reporting what a trace proves, Native DBI and deobfuscation (+7 more)
+Cohesion: 0.17
+Nodes (8): Step 4: Capability picture — read both sides, Tier 3 — runtime and network, BridgeError, Exception, Establish device, session and script. Raises on failure., Connect if needed; retry with backoff while the target is reachable. Each…, Owns device -> session -> script and re-establishes them when detached., RpcBridge
 
 ### Community 181 - "reorder_row"
 Cohesion: 0.12
@@ -1164,9 +1183,9 @@ Nodes (4): enabled_for, platform, enabled(), enabled_for()
 Cohesion: 0.12
 Nodes (22): _all_atoms(), capabilities_for_script(), closure(), walk(), declared_capability(), dynamic_hint(), human_report(), main() (+14 more)
 
-### Community 192 - "re"
-Cohesion: 0.12
-Nodes (19): build_index(), disasm_window(), load_pp(), load_refs(), lookup_index(), main(), B/BL target -> call sites, decoded arithmetically (no disassembler needed)., Annotated, windowed disassembly of a Dart AOT snapshot, plus a caller index.… (+11 more)
+### Community 192 - "dart_disasm.py"
+Cohesion: 0.31
+Nodes (9): build_index(), disasm_window(), load_pp(), load_refs(), lookup_index(), main(), B/BL target -> call sites, decoded arithmetically (no disassembler needed)., Annotated, windowed disassembly of a Dart AOT snapshot, plus a caller index.… (+1 more)
 
 ### Community 193 - "missing_pulseaudio_properties"
 Cohesion: 0.40
@@ -1181,24 +1200,24 @@ Cohesion: 0.15
 Nodes (20): action, crate, DownloadState, gettext, footer(), App, Option, Page (+12 more)
 
 ### Community 196 - "Dex patching — choosing and executing the surgical edit"
-Cohesion: 0.09
-Nodes (20): Before you patch a method: blast-radius check, Common rewrites, Dex patching — choosing and executing the surgical edit, Finding the call site, Order of operations for a real patch task, Pick the least destructive technique that can express your change, Practical details that decide success, Technique 1: dexlib2 method-level rewrite (preferred) (+12 more)
+Cohesion: 0.15
+Nodes (12): Before you patch a method: blast-radius check, Common rewrites, Dex patching — choosing and executing the surgical edit, Finding the call site, Order of operations for a real patch task, Pick the least destructive technique that can express your change, Practical details that decide success, Technique 1: dexlib2 method-level rewrite (preferred) (+4 more)
 
 ### Community 197 - "localization.rs"
 Cohesion: 0.40
 Nodes (3): COMPLETE, named_placeholders(), Vec
 
-### Community 198 - "accessible_action"
-Cohesion: 0.50
-Nodes (4): ActionData, accessible_action(), NodeId, Option
+### Community 198 - "Event"
+Cohesion: 0.25
+Nodes (8): ActionData, accessible_action(), keyboard(), Event, Key, Modifiers, NodeId, Option
 
 ### Community 200 - "MilkDrop High Frame-Rate Audio Visualization"
 Cohesion: 0.50
 Nodes (4): MilkDrop 60 FPS Visualizer Poster Screenshot, MilkDrop High Frame-Rate Audio Visualization, Winamp Classic Skin Mini Player and Equalizer, Winamp Classic Mini Player Skin Screenshot
 
 ### Community 201 - "Toolchain — What to Use, How to Invoke It, and Where It Lies"
-Cohesion: 0.09
-Nodes (22): Closing a capability gap — installing the tool IS the task, ddc — dex-to-Java with query subcommands (worth adopting), droidasc (ASC) — ask an APK "who references this?", in one query, Ghidra, Ghidra — the decompiler for a target whose decisive layer is aarch64, IDA Pro, headless, MCP tool servers — an external dependency, not a tool on the shelf, "Not on PATH" is not "not installed" (+14 more)
+Cohesion: 0.14
+Nodes (13): Closing a capability gap — installing the tool IS the task, Ghidra — the decompiler for a target whose decisive layer is aarch64, "Not on PATH" is not "not installed", Recording the toolchain actually used, Signing: pick the signer deliberately, The general trap: a tool's failure is not a finding about the target, Tier 0 — present on almost any machine, no install, Tier 2 — native (+5 more)
 
 ### Community 202 - "Bookmark Icon"
 Cohesion: 0.67
@@ -1217,8 +1236,8 @@ Cohesion: 0.33
 Nodes (6): Localization and Translation Guide, Gettext PO Localization Pipeline, Project Funding Configuration, MilkDrop Music Visualizer, Spotifast Application Overview, Winamp Mini Player Interface
 
 ### Community 239 - "struct"
-Cohesion: 0.13
-Nodes (20): class_map(), main(), Diff two dex files at the class_defs level: class names + access_flags. The…, read_strings(), uleb128(), dex_strings(), iter_dex(), main() (+12 more)
+Cohesion: 0.11
+Nodes (24): class_map(), main(), Diff two dex files at the class_defs level: class names + access_flags. The…, read_strings(), uleb128(), collect_targets(), find_offsets(), main() (+16 more)
 
 ### Community 240 - "Dynamic analysis with Frida"
 Cohesion: 0.09
@@ -1228,21 +1247,21 @@ Nodes (21): Anti-instrumentation, Attach by PID when the process list is incompl
 Cohesion: 0.13
 Nodes (17): classify(), main(), Entry-level APK diff: what actually changed between two builds. Two jobs, both…, {entry_name: (size, sha256, compress_type, crc)}, snapshot(), candidates_from_apk(), _children(), main() (+9 more)
 
-### Community 242 - "dex_mem_scan.py"
-Cohesion: 0.13
-Nodes (19): collect_targets(), find_offsets(), main(), Scan one capture; return (records, extracted_count, skipped_count)., Scan memory captures for embedded dex images and optionally extract them. A…, `dex\\n0XY` -> 'XY' when both digits are decimal, else None., Yield (absolute offset, buffer, index in buffer, buffer base) for each magic.…, Return (file_size, class_defs_size, link_size) or None if the header is short. (+11 more)
+### Community 242 - "visualizer"
+Cohesion: 0.24
+Nodes (19): eased_fill(), extras(), now_playing_block(), App, Color32, Mesh, Option, Painter (+11 more)
 
-### Community 243 - "frida_rpc_serve.py"
-Cohesion: 0.14
-Nodes (17): main(), Bridge a Frida script's rpc.exports to local Python, a REPL, or a tiny HTTP…, run_call_mode(), run_http_mode(), do_GET(), do_POST(), _send(), run_repl_mode() (+9 more)
+### Community 243 - "time"
+Cohesion: 0.11
+Nodes (23): main(), Bridge a Frida script's rpc.exports to local Python, a REPL, or a tiny HTTP…, run_call_mode(), run_http_mode(), do_GET(), do_POST(), _send(), run_repl_mode() (+15 more)
 
 ### Community 244 - "dart_pool_strings.py"
 Cohesion: 0.15
 Nodes (18): decode_payload(), extract(), histogram(), load_pp(), main(), Return {start: (end, text, form)} for every framed candidate of the wanted kind., For each candidate, how many back-to-back entries follow it (inclusive)., Strings present in a decompiler pool listing, for cross-annotation. (+10 more)
 
 ### Community 245 - "run_probe.py"
-Cohesion: 0.16
-Nodes (16): adb_run(), attach_remote(), attach_usb(), find_adb(), format_message(), get_pid(), host_ts(), Logger (+8 more)
+Cohesion: 0.18
+Nodes (15): adb_run(), attach_remote(), attach_usb(), find_adb(), format_message(), get_pid(), host_ts(), Logger (+7 more)
 
 ### Community 246 - "svc_scan.py"
 Cohesion: 0.14
@@ -1257,16 +1276,16 @@ Cohesion: 0.19
 Nodes (18): decode_entry(), describe_value(), encode_entry(), encode_value(), main(), parse_extra(), Encode the Value payload (the bytes after the inner 0x12 <len>)., Encode one PreferenceMap entry. Two levels of 0x0A on purpose: outer: 0x0A… (+10 more)
 
 ### Community 249 - "SpotifyModels.kt"
-Cohesion: 0.33
-Nodes (18): Album, Artist, ArtistRef, Image, T, Lyrics, LyricsLine, Owner (+10 more)
+Cohesion: 0.26
+Nodes (20): DemoCatalog, SearchResults, Album, Artist, ArtistRef, Image, T, Lyrics (+12 more)
 
 ### Community 250 - "run_split_mode"
 Cohesion: 0.22
 Nodes (18): build_unsigned(), check_alignment(), choose_signer(), log(), main(), Return (keystore path, password), creating the keystore on first use., Handle --split-dir / --split: inventory the set, pick a legal route, act.…, The merge half of run_split_mode (kept separate to stay readable). (+10 more)
 
 ### Community 251 - "tls_check.py"
-Cohesion: 0.16
-Nodes (17): check_host(), days_left(), decode_der(), fetch_peer_cert(), fmt_name(), main(), parse_asn1_time(), Nov 29 23:59:59 2026 GMT' -> aware UTC datetime (or None). (+9 more)
+Cohesion: 0.15
+Nodes (18): check_host(), days_left(), decode_der(), fetch_peer_cert(), fmt_name(), main(), parse_asn1_time(), Nov 29 23:59:59 2026 GMT' -> aware UTC datetime (or None). (+10 more)
 
 ### Community 252 - "account_cache.rs"
 Cohesion: 0.18
@@ -1296,9 +1315,9 @@ Nodes (14): Bootstrapping when relocations cannot work, Cross-architecture notes
 Cohesion: 0.38
 Nodes (13): appReplacement(), guard(), installAppLayer(), installDnsLayer(), installOkHttpLayer(), installRawUrlLayer(), installThrowableLayer(), main() (+5 more)
 
-### Community 259 - "kernelsu_syscall_mask.py"
-Cohesion: 0.19
-Nodes (13): cmd_gates(), cmd_generate(), cmd_verify(), main(), kernelsu_syscall_mask.py -- generate a configurable kernel-side syscall-masking…, Fill a template's {placeholders} without str.format(). Braces are the common…, Render the JSON rule set as a C table., Report the kernel-route gate table, and probe this host where it can be probed. (+5 more)
+### Community 259 - "ThumbBar"
+Cohesion: 0.16
+Nodes (13): PhantomData, Rc, ComApartment, icon_size(), property(), Drop, Fn, Send (+5 more)
 
 ### Community 260 - "repack.py"
 Cohesion: 0.17
@@ -1313,8 +1332,8 @@ Cohesion: 0.14
 Nodes (13): Building without Gradle, Deploy, enable, and verify, Failure modes, Hiding the framework from the target, How injection actually works, LSPosed modules — when to deliver a hook instead of a patched APK, LSPosed vs Frida — the division of labour, Minimal module anatomy (+5 more)
 
 ### Community 263 - "blob_decode.py"
-Cohesion: 0.23
-Nodes (13): inflate_raw(), main(), log(), outer_decode(), outer_encode(), How much does this look like a real document we can edit?, Decode (and re-encode) an opaque single-value blob cached by an app. Many apps…, Cheap guess first so the common case is instant. (+5 more)
+Cohesion: 0.14
+Nodes (20): inflate_raw(), main(), log(), outer_decode(), outer_encode(), How much does this look like a real document we can edit?, Decode (and re-encode) an opaque single-value blob cached by an app. Many apps…, Cheap guess first so the common case is instant. (+12 more)
 
 ### Community 264 - "run"
 Cohesion: 0.20
@@ -1349,8 +1368,8 @@ Cohesion: 0.17
 Nodes (11): 10. What this file does not claim, 1. What the set is, 2. Getting the set off a device, 3. The decision: merge or resign, 4. Unified signing — the route that always works, 6. Install refusals, and what each one means, 7. Making an installable fixture from a pulled set, 8. ABI and density matching (+3 more)
 
 ### Community 272 - "Third-party builds — auditing a "cracked" or "modded" APK before trusting it"
-Cohesion: 0.17
-Nodes (11): Embedded secrets, New components, New outbound endpoints, Step 1: Can you even edit it?, Step 2: How many protection layers does it carry?, Step 3: What did the author ADD?, Step 4: Capability picture — read both sides, Step 5: The verdict (+3 more)
+Cohesion: 0.18
+Nodes (10): Embedded secrets, New components, New outbound endpoints, Step 1: Can you even edit it?, Step 2: How many protection layers does it carry?, Step 3: What did the author ADD?, Step 5: The verdict, Third-party builds — auditing a "cracked" or "modded" APK before trusting it (+2 more)
 
 ### Community 273 - "TLS and certificate failures"
 Cohesion: 0.17
@@ -1361,8 +1380,8 @@ Cohesion: 0.17
 Nodes (12): abi_of_split(), is_signature_entry(), merge_split_set(), pick_base(), plan_split_set(), True when folding this split into the base would require merging arsc., The base is the member with no `split` attribute; ties break toward dex., Decide merge vs resign for this set, and say why in one sentence each. Returns… (+4 more)
 
 ### Community 275 - "snap.py"
-Cohesion: 0.32
-Nodes (7): capture_image(), Dev, main(), Capture what is actually on screen -- and say whether the control tree is…, Return (status, node_count, text_count). status in {OK, EMPTY, FAILED}., run(), tree_stats()
+Cohesion: 0.28
+Nodes (8): capture_image(), Dev, main(), Capture what is actually on screen -- and say whether the control tree is…, Return (status, node_count, text_count). status in {OK, EMPTY, FAILED}., run(), tree_stats(), hashlib
 
 ### Community 276 - "SpotifyRepository"
 Cohesion: 0.26
@@ -1400,9 +1419,9 @@ Nodes (8): atomic, AndroidAudioSink, Arc, AtomicU32, Option, Self, mutex, PcmCal
 Cohesion: 0.18
 Nodes (11): Documentation Head Include, Plausible Analytics Script, How It Connects Reference, Spotify Connect Receiver Discovery, Independent Spotify Authorization Grants, Personal Spotify Web API App, Network Proxy Architecture, Restricted Device and Sonos Control (+3 more)
 
-### Community 285 - "PositionedPage"
-Cohesion: 0.27
-Nodes (9): null_default(), Page<T>, PositionedPage, D, From, Result, Self, T (+1 more)
+### Community 285 - "positioned_album_tracks"
+Cohesion: 0.23
+Nodes (11): null_default(), Page<T>, positioned_album_tracks(), PositionedPage, D, From, Result, Self (+3 more)
 
 ### Community 286 - "Ad removal"
 Cohesion: 0.20
@@ -1428,9 +1447,9 @@ Nodes (9): Failure modes, Identification, Java2C and JNI Sinking — the dex is 
 Cohesion: 0.20
 Nodes (9): Anti-patterns, Behavioral verification (the part people skip), Reporting, Runtime verification, Screenshot discipline, Structural verification (automate it), The claim ladder, The control build rule (+1 more)
 
-### Community 292 - "Differential hardening (the known-plaintext route to a private opcode table)"
-Cohesion: 0.20
-Nodes (9): 1. The method, and the one thing it needs to be true, 2. Cost table — which links can be automated, and which cannot, 3. The coverage fixture — what a compiled probe can and cannot reach, 4. Extracting the correspondence, 5. Proving the table — the part that decides whether any of this is real, 6. Generating Smali from a restored stream, 7. When this route does not work — the honest retreat, 8. Decision summary (+1 more)
+### Community 292 - "Lyrics"
+Cohesion: 0.21
+Nodes (16): cached(), fetch(), from_spotify(), get(), lookup(), Lyrics, Query, read_cache() (+8 more)
 
 ### Community 293 - "preflight.py"
 Cohesion: 0.33
@@ -1528,13 +1547,13 @@ Nodes (5): 1. JNI — a Java `native` declaration and its implementation are two
 Cohesion: 0.33
 Nodes (5): Precedent library — what a pass got right, and how it got there, Rules, Template, The cases, Why this exists at all
 
-### Community 317 - "LanguageChoice"
-Cohesion: 0.33
-Nodes (4): Deserialize, Serialize, LanguageChoice, D
+### Community 317 - ".parse"
+Cohesion: 0.11
+Nodes (18): Deserialize, Ok, Proxy, S, Serialize, a_legacy_socks_url_becomes_socks_mode(), engine_only_accepts_plain_http_proxy_urls(), http_and_socks_parse_a_host_and_port() (+10 more)
 
-### Community 318 - "NavScreen"
-Cohesion: 0.40
-Nodes (5): NavScreen, HOME, LIBRARY, SEARCH, ImageVector
+### Community 318 - "AppNavigation.kt"
+Cohesion: 0.10
+Nodes (20): AppNavigation(), Composable, Modifier, NavScreen, HOME, LIBRARY, SEARCH, Composable (+12 more)
 
 ### Community 319 - ".screencap"
 Cohesion: 0.50
@@ -1552,25 +1571,105 @@ Nodes (4): What a member of a set contributes: base / abi / code / resources. Th
 Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
+### Community 323 - "Self"
+Cohesion: 0.13
+Nodes (9): a_new_session_atomically_replaces_the_previous_one(), a_settings_file_saved_with_a_byte_order_mark_keeps_its_preferences(), HomeSettings, HomeShelfSettings, PlayerBarVis, Default, Path, Self (+1 more)
+
+### Community 324 - "String"
+Cohesion: 0.22
+Nodes (15): BatchedEntityRequest, ExtensionKind, SessionEpisode, audiobook_shows(), audiobooks_in(), episode(), id_of(), iso8601() (+7 more)
+
+### Community 333 - "Vec"
+Cohesion: 0.21
+Nodes (15): CountryTopTracks, a_station_lists_each_song_once_in_spotify_order(), artist_top_track_uris(), artist_top_tracks(), partial_popular_metadata_keeps_the_available_ranking_order(), playlist_uri(), popular_tracks_prefer_the_account_market_and_preserve_its_first_ten(), resolved_artist_top_tracks() (+7 more)
+
+### Community 334 - "Option"
+Cohesion: 0.29
+Nodes (11): leading_stamp(), Line, lrc_lines_parse_and_sort(), parse_lrc(), pick(), Record, Option, Vec (+3 more)
+
+### Community 335 - "AuthManager.kt"
+Cohesion: 0.18
+Nodes (10): base64, customtabsintent, dispatchers, formbody, jsonobject, log, messagedigest, request (+2 more)
+
+### Community 336 - "ProxyMode"
+Cohesion: 0.17
+Nodes (8): infer_legacy_proxy_mode(), proxy_mode_is_system(), ProxyMode, .ALL, Cow, split_legacy_address(), ThemeChoice, .ALL
+
+### Community 337 - "Native DBI and deobfuscation"
+Cohesion: 0.20
+Nodes (9): 1. Which obfuscation are you looking at, 2. Pick the observation before you pick the tool, 3. Recording a trace with `scripts/stalker_trace.js`, 4. Stalker, QBDI, or emulation, 5. From a trace to a deobfuscated function (inferred), 6. Failure modes, 7. Reporting what a trace proves, Native DBI and deobfuscation (+1 more)
+
+### Community 338 - "dart_pprefs.py"
+Cohesion: 0.31
+Nodes (8): build(), lookup(), main(), Dart AOT object-pool reference index: pool offset -> the instructions that load…, Return (vaddr, bytes) of .text, parsing ELF64 section headers directly., scan(), sx(), text_section()
+
+### Community 339 - "stored_grant"
+Cohesion: 0.31
+Nodes (9): duration, devices(), main(), Option, Result, String, Vec, stored_grant() (+1 more)
+
+### Community 340 - "Server-side analysis — deciding whether a patch can even matter"
+Cohesion: 0.22
+Nodes (8): Also test the *unknown input* case, Behaviors that help you and behaviors that do not, Harvest the API surface from the client, Prove who owns the gate, Reproduce requests faithfully, Response envelope, Server-side analysis — deciding whether a patch can even matter, What to record
+
+### Community 341 - "table_contents"
+Cohesion: 0.25
+Nodes (9): absolute_row_index(), list_shortcuts(), placeholder_row(), Fn, sort_by_text_key(), Table, table_contents(), TablePagination (+1 more)
+
+### Community 342 - "menu"
+Cohesion: 0.32
+Nodes (8): Popup, menu(), menu_font(), menu_limit(), FnOnce, InnerResponse, R, Ui
+
+### Community 343 - "header"
+Cohesion: 0.38
+Nodes (7): SessionPlaylist, SessionRow, header(), owner_of(), rows(), snapshot(), total()
+
+### Community 344 - "mark_rgba"
+Cohesion: 0.43
+Nodes (7): app_icon_rgba(), mark_rgba(), pixel(), Vec, the_icon_is_polished_at_every_size(), tray_template_rgba(), triangle_distance()
+
+### Community 345 - "procedure"
+Cohesion: 0.60
+Nodes (6): HWND, LPARAM, LRESULT, forward(), procedure(), WPARAM
+
+### Community 346 - ".new"
+Cohesion: 0.50
+Nodes (3): an_empty_folder_asks_for_nothing(), Self, sequential_order_walks_the_folder()
+
+### Community 347 - "row"
+Cohesion: 0.60
+Nodes (5): a_row_carries_who_added_it_and_when(), a_track_listed_twice_keeps_its_details_both_times(), an_episode_listed_twice_keeps_its_details_both_times(), playables(), row()
+
+### Community 348 - "Vec"
+Cohesion: 0.60
+Nodes (5): playlist_cached_table_items(), playlist_rows(), HashMap, PlaylistItem, Vec
+
+### Community 349 - "Tier 1 — dex and Java"
+Cohesion: 0.50
+Nodes (4): ddc — dex-to-Java with query subcommands (worth adopting), droidasc (ASC) — ask an APK "who references this?", in one query, rasc — the same index in Rust, when you have built it, Tier 1 — dex and Java
+
+### Community 350 - "MCP tool servers — an external dependency, not a tool on the shelf"
+Cohesion: 0.50
+Nodes (4): Ghidra, IDA Pro, headless, MCP tool servers — an external dependency, not a tool on the shelf, The boundary: deobfuscate before you hand the binary to a model
+
 ## Knowledge Gaps
-- **931 isolated node(s):** `update-translations.sh script`, `spotifast`, `HOME`, `SEARCH`, `LIBRARY` (+926 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 2355 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **45 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **932 isolated node(s):** `update-translations.sh script`, `spotifast`, `HOME`, `SEARCH`, `LIBRARY` (+927 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 2362 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **44 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `App` connect `App` to `.default`, `collection.rs`, `app.rs`, `.handle_api`, `src/lyrics.rs`, `a_late_url_from_an_earlier_upload_cannot_replace_the_new_cover`, `models.rs`, `PlayHistory`, `LikedSongs`, `Ui`, `model.rs`, `Option`, `power.rs`, `images.rs`, `String`, `Track`, `single_instance.rs`, `Settings`, `zeroconf.rs`, `ProxyConfig`, `MainActivity.kt`, `.radio_name`, `LocalState`, `host.rs`, `AppDirs`, `WinampState`, `Palette`, `client.rs`, `theme`, `PagedList<T>`, `Locale`, `playlist_cover.rs`, `appearance.rs`, `.default`, `test_app`, `View`, `String`?**
-  _High betweenness centrality (0.112) - this node is a cross-community bridge._
-- **Why does `Context` connect `App` to `.default`, `app.rs`, `models.rs`, `PlayHistory`, `Overlay`, `milkdrop.rs`, `theme.rs`, `Option`, `Shell`, `i18n.rs`, `accessible_app`, `ui/mod.rs`, `demo.rs`, `topbar.rs`, `images.rs`, `ui/settings.rs`, `window.rs`, `widgets.rs`, `winamp/mod.rs`, `DemoDrag`, `Engine`, `WinampState`, `populate`, `Vec`, `Palette`, `player_bar.rs`, `pixel_text.rs`, `child.rs`, `.new`, `ui/lyrics.rs`, `devices.rs`, `theme`, `overlay.rs`, `view_frame`, `.frame`, `test_app`, `draw`, `egui`, `View`, `keys.rs`, `Failure`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
-- **Why does `Error` connect `Error` to `zip.rs`, `Worker`, `WebTokens`, `Store`, `models.rs`, `LanguageChoice`, `skin/mod.rs`, `credentials.rs`, `sonos.rs`, `client.rs`, `LibrespotEngine`, `Fixture`, `Failure`, `.parse`, `String`, `PositionedPage`, `window.rs`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `App` connect `App` to `.default`, `app.rs`, `.handle_api`, `history.rs`, `a_late_url_from_an_earlier_upload_cannot_replace_the_new_cover`, `models.rs`, `PlayHistory`, `LikedSongs`, `model.rs`, `Palette`, `Option`, `power.rs`, `images.rs`, `String`, `Track`, `single_instance.rs`, `Settings`, `zeroconf.rs`, `MainActivity.kt`, `winamp/mod.rs`, `.radio_name`, `LocalState`, `host.rs`, `AppDirs`, `WinampState`, `Locale`, `client.rs`, `theme`, `playlist_cover.rs`, `appearance.rs`, `.new`, `test_app`, `App`, `String`?**
+  _High betweenness centrality (0.103) - this node is a cross-community bridge._
+- **Why does `Context` connect `App` to `.default`, `app.rs`, `models.rs`, `PlayHistory`, `Presets`, `milkdrop.rs`, `Palette`, `Option`, `Shell`, `dialogs.rs`, `accessible_app`, `ui/mod.rs`, `topbar.rs`, `images.rs`, `ui/settings.rs`, `window.rs`, `.new`, `winamp/mod.rs`, `DemoDrag`, `Engine`, `WinampState`, `demo.rs`, `frame_events`, `player_bar.rs`, `Locale`, `pixel_text.rs`, `child.rs`, `.new`, `active.rs`, `devices.rs`, `theme`, `overlay.rs`, `view_frame`, `Vec`, `.frame`, `test_app`, `draw`, `egui`, `View`, `keys.rs`, `visualizer`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `LocalState` connect `LocalState` to `App`, `.default`, `PlayerCommand`, `player.rs`, `sink_builder`, `String`, `Engine`, `Option`, `RepeatMode`, `power.rs`, `String`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `update-translations.sh script`, `spotifast`, `HOME` to the rest of the system?**
-  _931 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _932 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `App` be split into smaller, more focused modules?**
   _Cohesion score 0.028524046434494195 - nodes in this community are weakly interconnected._
 - **Should `.default` be split into smaller, more focused modules?**
   _Cohesion score 0.035870646766169155 - nodes in this community are weakly interconnected._
 - **Should `collection.rs` be split into smaller, more focused modules?**
-  _Cohesion score 0.08078231292517007 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._

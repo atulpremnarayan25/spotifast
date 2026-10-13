@@ -2184,9 +2184,9 @@
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/auth/AuthManager.kt": {
-    "mtime": 1791830402.377982,
-    "seen": 1791830439.678839,
-    "ast_hash": "2794d874c72fec006daba7255b4600c5",
+    "mtime": 1791884870.859385,
+    "seen": 1791886104.464271,
+    "ast_hash": "e18cf83cc2fefafedace87caa8d8cafc",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/auth/TokenStore.kt": {
@@ -2202,15 +2202,15 @@
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/data/models/SpotifyModels.kt": {
-    "mtime": 1791830319.0707054,
-    "seen": 1791830439.6788402,
-    "ast_hash": "fdf988451991c48c347c3f6e332ab3f8",
+    "mtime": 1791884945.6085765,
+    "seen": 1791886104.464361,
+    "ast_hash": "a295be2296a1605fb084354fe72c80c4",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/data/repository/SpotifyRepository.kt": {
-    "mtime": 1791829929.7249708,
-    "seen": 1791830439.6788402,
-    "ast_hash": "8ccc5206ebbf737c8503e8887f3df70e",
+    "mtime": 1791884963.1810727,
+    "seen": 1791886104.464363,
+    "ast_hash": "1fe79ebcf61770eff1069fe36d03542b",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/media/AudioFocusManager.kt": {
@@ -2228,7 +2228,7 @@
   "android/app/src/main/java/rocks/spotifast/native/LibrespotBridge.kt": {
     "mtime": 1791830327.4534233,
     "seen": 1791830439.678842,
-    "ast_hash": "493a422afc3f2ea4c2b63a263f1d856b",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/components/MiniPlayerBar.kt": {
@@ -2250,33 +2250,33 @@
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/navigation/AppNavigation.kt": {
-    "mtime": 1791830336.8736255,
-    "seen": 1791830439.678844,
-    "ast_hash": "5eba0ee043971b3d58b304c4b8e44588",
+    "mtime": 1791885058.550846,
+    "seen": 1791886104.464576,
+    "ast_hash": "389c4ec1f10614819224b28503bb8694",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/HomeScreen.kt": {
-    "mtime": 1791830343.4982166,
-    "seen": 1791830439.678844,
-    "ast_hash": "e971e166001e281588e3cca4b1c27dd3",
+    "mtime": 1791885022.8496478,
+    "seen": 1791886104.464577,
+    "ast_hash": "a820a281c7dd5359e05883f8ac10651e",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/LibraryScreen.kt": {
-    "mtime": 1791830349.8885126,
-    "seen": 1791830439.678844,
-    "ast_hash": "7e09b96be5e0782699c9b30632119f17",
+    "mtime": 1791885031.3364458,
+    "seen": 1791886104.4645782,
+    "ast_hash": "85bc16db197de075fbd2fe8a1cfbf772",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/LoginScreen.kt": {
-    "mtime": 1791830084.6174872,
-    "seen": 1791830439.678845,
-    "ast_hash": "7f7609d0e0c9dff8421a73ac042ed32a",
+    "mtime": 1791884877.311156,
+    "seen": 1791886104.46458,
+    "ast_hash": "b91f248f92c944703a958fb2208fbe15",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/NowPlayingBottomSheet.kt": {
-    "mtime": 1791830366.258875,
-    "seen": 1791830439.678845,
-    "ast_hash": "f2cae98ac4a994599846c5ba410e1da3",
+    "mtime": 1791885359.9054186,
+    "seen": 1791886104.464581,
+    "ast_hash": "b8c2d570cd39e6fa20a92bc17c153356",
     "semantic_hash": ""
   },
   "android/app/src/main/java/rocks/spotifast/ui/screens/SearchScreen.kt": {
@@ -2673,6 +2673,12 @@
     "mtime": 1791820872.1471212,
     "seen": 1791830439.6789389,
     "ast_hash": "beb16b8f35f144897cc382a79f7882b8",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/java/rocks/spotifast/data/DemoCatalog.kt": {
+    "mtime": 1791884936.0110753,
+    "seen": 1791886104.464315,
+    "ast_hash": "9f7e2da5e3f6c74a55416560337e87c5",
     "semantic_hash": ""
   }
 }

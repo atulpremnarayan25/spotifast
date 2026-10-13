@@ -41,6 +41,10 @@ class TokenStore(context: Context) {
         get() = prefs.getString(KEY_PLAYBACK_TOKEN, null)
         set(value) = prefs.edit().putString(KEY_PLAYBACK_TOKEN, value).apply()
 
+    var customClientId: String?
+        get() = prefs.getString(KEY_CUSTOM_CLIENT_ID, null)
+        set(value) = prefs.edit().putString(KEY_CUSTOM_CLIENT_ID, value).apply()
+
     val isSignedIn: Boolean
         get() = !webAccessToken.isNullOrBlank()
 
@@ -53,5 +57,6 @@ class TokenStore(context: Context) {
         private const val KEY_WEB_REFRESH = "web_refresh_token"
         private const val KEY_WEB_EXPIRES_AT = "web_expires_at"
         private const val KEY_PLAYBACK_TOKEN = "playback_token"
+        private const val KEY_CUSTOM_CLIENT_ID = "custom_client_id"
     }
 }
